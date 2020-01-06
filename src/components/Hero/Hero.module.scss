@@ -1,0 +1,30 @@
+@import '../_variables.scss';
+
+section {
+    .title {
+      h1, h2 {
+        padding-bottom: 20px;
+        @include Title;
+        word-wrap: break-word;
+      }
+      .subtitle {
+        @include text_Light;
+        font-size: 20px;
+        padding-bottom: 40px;
+  
+      }
+      .button {
+        margin: auto;
+      }
+      @media screen and (min-width: $tablet){
+        .subtitle {
+          max-width: 500px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  
+  section#software-image .container {
+    text-align: center;
+  }

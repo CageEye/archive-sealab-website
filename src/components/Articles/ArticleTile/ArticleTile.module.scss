@@ -1,0 +1,44 @@
+@import '../../_variables.scss';
+
+.tile {
+  border-radius: 0 0 3px 3px;
+  -webkit-box-shadow: 0px 1px 1px 0 rgba(199,199,199,1);
+  -moz-box-shadow: 0px 1px 1px 0 rgba(199,199,199,1);
+  box-shadow: 0px 1px 1px 0 rgba(199,199,199,1);
+  // margin-top: -8px;
+  transition: $transition;
+  &:hover, &:focus {
+  -webkit-box-shadow: 0px 1px 1px 0 #1F253A;
+  -moz-box-shadow: 0px 1px 1px 0 #1F253A;
+  box-shadow: 0px 1px 1px 0 #1F253A;
+  }
+  .tile-content {
+    padding: 16px 21px;
+  }
+}
+.date {
+  @include Subtitle;
+  color: $text-light;
+  font-size: 14px !important;
+  padding-bottom: 10px;
+}
+.image {
+  font-family: $primaryFont;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: .55px;
+  color: $text-grey-light;
+  width: 100%;
+  height: auto;
+  @media only screen and(min-width: $desktop){
+    min-height: 270px;
+  }
+}
+
+.title {
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+  line-height: 130%;
+  color: $title-dark;
+}
