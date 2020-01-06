@@ -24,12 +24,38 @@ collections:
       - {label: "Innhold", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler."}
   - name: "software"
-    label: "Software sider"
-    folder: "src/pages/blogg"
+    label: "Apper"
+    folder: "src/pages/apper"
     create: true
-    description: "Software artikler. Her kan man lage, endre eller slette artikler."
+    description: "Apper med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navnpåside.no"
     filter: {field: "templateKey", value: "software-post"}
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-post"}
+      - {label: "Tittel", name: "title", widget: "string"}
+      - {label: "Overskrift", name: "title", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", hint: "Denne kan brukes til å velge hvilke aritkler som skal vises på Blogg-siden."}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false,}
+
+      - label: "Todelt seksjon"
+        name: "softwareDescription"
+        widget: "object"
+        fields:
+          - {label: "Venstre overskrift", name: "heading", widget: "string"}
+          - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+          - label: "Høyre tekst"
+            name: "body"
+            widget: "markdown"
+      - {label: "Innhold", name: "body", widget: "markdown"}
+      - {label: "SEO Beskrivelse", name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler."}
+  - name: "software"
+    label: "Sider som bruker Software mal"
+    folder: "src/pages"
+    create: true
+    description: "Software sider som bruker Software mal. Her kan man lage, endre eller slette artikler. Disse sidene har ingen prefix, og havner derfor under sealab.no/navnpåside.no"
+    filter: {field: "templateKey", value: "software-post"}
+    identifier_field: name
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-post"}
       - {label: "Tittel", name: "title", widget: "string"}
