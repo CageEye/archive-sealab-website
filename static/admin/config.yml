@@ -1,6 +1,6 @@
 backend:
-  name: gitlab
-  branch: stable
+  name: github
+  repo: SEALAB-Software/website
 
 media_folder: static/img
 public_folder: /img
