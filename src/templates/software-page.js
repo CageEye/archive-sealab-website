@@ -84,7 +84,7 @@ const SoftwarePage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        image={frontmatter.featuredImage.childImageSharp.fluid}
+        image={frontmatter.featuredimage.childImageSharp.fluid}
         description={frontmatter.softwareDescription}
       />
       <RecentArticles />
@@ -109,7 +109,7 @@ export const SoftwarePageQuery = graphql`
       html
       frontmatter {
         title
-        featuredImage {
+        featuredimage {
           childImageSharp {
             fluid(maxHeight: 790) {
               ...GatsbyImageSharpFluid_tracedSVG
