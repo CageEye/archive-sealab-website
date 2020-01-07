@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: G-force
+heading: G-force
 subheading: >-
   Unik informasjon om arbeidsforholdene på både merdkant og fôrflåte hjelper deg
   å avgjøre når det er forsvarlig å oppholde seg der og ikke.

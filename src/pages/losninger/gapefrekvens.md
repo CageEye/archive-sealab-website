@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: Gapefrekvens
+heading: Gapefrekvens
 subheading: 'Sanntidsinformasjon om stressnivået i merdene, basert på fiskens gapefrekvens.'
 featuredimage: /img/gapefrekvens-graf.png
 softwareDescription:

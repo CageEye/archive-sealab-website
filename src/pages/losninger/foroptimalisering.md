@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: Fôroptimalisering
+heading: Fôroptimalisering
 subheading: >-
   Pelletdeteksjon, strømdata og fôrets synkehastighet i kombinasjon med
   historisk informasjon gir deg nødvendig beslutningsgrunnlag for optimalisert

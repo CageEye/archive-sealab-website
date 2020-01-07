@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: Lusetelling
+heading: Lusetelling
 subheading: >-
   Automatisk lusetelling gir deg sanntidsinformasjon om lusepåslaget i dine
   merder til enhver tid.

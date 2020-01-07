@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: Weather
+heading: Weather
 subheading: Full oversikt over værsituasjonen på ditt oppdrettsanlegget
 featuredimage: /img/weather_module_green.png
 softwareDescription:

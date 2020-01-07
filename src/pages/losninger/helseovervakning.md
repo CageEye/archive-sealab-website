@@ -1,6 +1,7 @@
 ---
 templateKey: software-page
 title: Helseovervåkning på individnivå
+heading: Helseovervåkning på individnivå
 subheading: >-
   Individuell gjenkjenning av laks og automatisk registrering av sår, skader og
   sykdom vil gir bedre innsikt og kontroll over fiskehelse enn noen gang.
