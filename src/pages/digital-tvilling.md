@@ -6,7 +6,7 @@ subheading: >-
   En digital kopi av en merd kan brukes til å optimere den daglige driften,
   forutse behov for vedlikehold eller redusere sjansen for feiltrinn når nye
   ideer skal settes til livs for første gang. 
-featuredimage: /img/status-network-analysis-digital-twin-03.jpg
+featuredimage: /img/digital-twin.jpg
 softwareDescription:
   heading: Broen mellom den fysiske og den digitale verden
   subheading: Den digitale tvillingen
