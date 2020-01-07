@@ -28,7 +28,7 @@ collections:
     label: "Apper"
     folder: "src/pages/apper"
     create: true
-    description: "Apper med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navnpåside.no"
+    description: "Apper med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
     filter: {field: "templateKey", value: "software-page"}
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-page"}
@@ -49,7 +49,7 @@ collections:
     label: "Sider som bruker Software mal"
     folder: "src/pages"
     create: true
-    description: "Software sider som bruker Software mal. Her kan man lage, endre eller slette artikler. Disse sidene har ingen prefix, og havner derfor under sealab.no/navnpåside.no"
+    description: "Software sider som bruker Software mal. Her kan man lage, endre eller slette artikler. Disse sidene har ingen prefix, og havner derfor under sealab.no/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
     filter: {field: "templateKey", value: "software-page"}
     identifier_field: name
     fields:
@@ -58,7 +58,6 @@ collections:
       - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
       - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false,}
-
       - label: "Todelt seksjon"
         name: "softwareDescription"
         widget: "object"
@@ -68,6 +67,29 @@ collections:
       - {label: "Høyre innhold", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
+  - name: "settings"
+    label: "Navigasjon & Footer"
+    files: 
+      - file: "src/pages/innstillinger/navbar.md"
+        label: "Navigasjon"
+        name: "navbar"
+        fields: 
+          - label: "Lenker"
+            name: "menuLinks"
+            widget: "list"
+            fields: 
+              - {label: Lenke, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Overskrift, name: title, widget: string}
+              - label: Dropdown
+                name: dropdown
+                widget: list
+                hint: "Hvis tom, så vises det ingen dropdown eller pil."
+                fields:
+                  - {label: Lenke, name: link, widget: string}
+                  - {label: Overskrift, name: title, widget: string}
+
+
+  
   - name: "pages"
     label: "Vanlige sider"
     files:
