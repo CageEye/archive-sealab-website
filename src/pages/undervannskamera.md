@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Undervannskamera til lakseoppdrett. Produsert i Norge av SEALAB
-featuredImage: /img/PT_Cam_Frilagt.png
+featuredimage: /img/PT_Cam_Frilagt.png
 heading: Undervannskamera
 subheading: SEALAB utvikler unike kamerasystemer som leverer sylskarpe bilder av laks og merd til ditt kontrollrom. Systemene integrerer kamera, lys, sensorikk, mekanikk og programvare som kommuniserer sammen (IoT).
 seoDescription: SEALAB utvikler unike kamerasystemer som leverer sylskarpe bilder av laks og merd til ditt kontrollrom. Systemene integrerer kamera, lys, sensorikk, mekanikk og programvare som kommuniserer sammen (IoT).

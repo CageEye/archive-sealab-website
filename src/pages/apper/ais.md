@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: AIS
-featuredImage: /img/ais.png
+featuredimage: /img/ais.png
 heading: AIS
 subheading: Se og bli sett av fartøy i ditt område, samtidig som du automatisk logger faste anløp av kjente fartøy.
 seoDescription: Se og bli sett av fartøy i ditt område, samtidig som du automatisk logger faste anløp av kjente fartøy. 

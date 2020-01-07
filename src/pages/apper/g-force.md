@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: G-force
-featuredImage: /img/g-force.png
+featuredimage: /img/g-force.png
 heading: G-force
 subheading: Unik informasjon om arbeidsforholdene på både merdkant og fôrflåte hjelper deg å avgjøre når det er forsvarlig å oppholde seg der og ikke.
 seoDescription: Unik informasjon om arbeidsforholdene på både merdkant og fôrflåte hjelper deg å avgjøre når det er forsvarlig å oppholde seg der og ikke. 

@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Undervannslys
-featuredImage: "/img/quintus.jpg"
+featuredimage: "/img/quintus.jpg"
 heading: Undervannslys
 subheading: Quintus-LED er utviklet for å gi ditt SEALAB maskinsyn-kamera optimal effekt, til og med under mørke og uklare omstendigheter. Samtidig er det et arbeidslys for røkter. 24 timer i døgnet, året rundt.
 softwareDescription: 

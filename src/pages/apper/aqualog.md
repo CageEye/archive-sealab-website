@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Aqualog
-featuredImage: /img/site.png
+featuredimage: /img/site.png
 heading: Aqualog
 subheading: Heldigital og superrask logging av regelmessig vedlikehold av kamerasystemet sikrer garantiforhold på utstyret, i tillegg til høy oppetid. 
 seoDescription: Heldigital og superrask logging av regelmessig vedlikehold av kamerasystemet sikrer garantiforhold på utstyret, i tillegg til høy oppetid.  
