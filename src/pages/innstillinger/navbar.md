@@ -7,6 +7,8 @@ menuLinks:
         title: BlueThink™ GO
     link: '#'
     title: BlueThink™
+  - link: /digital-tvilling
+    title: Digital tvilling
   - dropdown:
       - link: /apper/ais
         title: AIS
@@ -36,7 +38,5 @@ menuLinks:
     title: Fokusområder
   - link: /blogg
     title: Blogg
-  - link: /digital-tvilling
-    title: Digital tvilling
 ---
 
