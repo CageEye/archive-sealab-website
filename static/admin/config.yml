@@ -78,15 +78,15 @@ collections:
             name: "menuLinks"
             widget: "list"
             fields: 
-              - {label: Lenke, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - label: Dropdown
                 name: dropdown
                 widget: list
                 hint: "Hvis tom, så vises det ingen dropdown eller pil."
                 fields:
-                  - {label: Lenke, name: link, widget: string}
                   - {label: Overskrift, name: title, widget: string}
+                  - {label: Lenke, name: link, widget: string}
 
 
   
