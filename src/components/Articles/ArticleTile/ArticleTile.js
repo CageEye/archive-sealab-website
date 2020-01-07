@@ -9,7 +9,7 @@ import 'moment/locale/nb';
 const Article = ({ title, image, date, path, keyName, outerClass }) => (
   <Link key={keyName} to={path} className={classNames('column', outerClass)}>
     <div className={styles.tile}>
-      <Img fluid={image} />
+      <Img className={styles.image} fluid={image} />
       <div className={styles.tileContent}>
         <p className={styles.date}>{`${moment(date)
           .locale('nb')
