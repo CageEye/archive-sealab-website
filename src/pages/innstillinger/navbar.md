@@ -1,25 +1,23 @@
 ---
 menuLinks:
-  - title: BlueThink™
+  - dropdown:
+      - link: /bluethink
+        title: BlueThink™ Kontrollrom
+      - link: /bluethink-go
+        title: BlueThink™ GO
     link: '#'
-    dropdown:
-      - title: BlueThink™ Kontrollrom
-        link: /bluethink
-      - title: BlueThink™ GO
-        link: /bluethink-go
-  - title: Digital tvilling
-    link: /digital-tvilling
-  - title: Apps
+    title: BlueThink™
+  - dropdown:
+      - link: /apper/ais
+        title: AIS
+      - link: /apper/g-force
+        title: G-force
+      - link: /apper/weather
+        title: Weather
+      - link: /apper/aqualog
+        title: Aqualog
     link: '#'
-    dropdown:
-      - title: AIS
-        link: /apper/ais
-      - title: G-force
-        link: /apper/g-force
-      - title: Weather
-        link: /apper/weather
-      - title: Aqualog
-        link: /apper/aqualog
+    title: Apps
   - dropdown:
       - link: /undervannskamera
         title: Undervannskamera
@@ -27,16 +25,18 @@ menuLinks:
         title: Undervannslys
     link: '#'
     title: Hardware
-  - link: '#'
+  - dropdown:
+      - link: /losninger/foroptimalisering
+        title: Fôroptimalisering
+      - link: /losninger/helseovervakning
+        title: Helseovervåkning
+      - link: /losninger/gapefrekvens
+        title: Stressnivå
+    link: '#'
     title: Fokusområder
-    dropdown:
-      - title: Fôroptimalisering
-        link: /losninger/foroptimalisering
-      - title: Helseovervåkning
-        link: /losninger/helseovervakning
-      - title: Stressnivå
-        link: /losninger/gapefrekvens
-  - title: Blogg
-    link: /blogg
+  - link: /digital-tvilling
+    title: Digital tvilling
+  - link: /blogg
+    title: Blogg
 ---
 
