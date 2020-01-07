@@ -7,8 +7,8 @@ subheading: >-
   når nye ideer skal settes til livs for første gang. 
 featuredimage: /img/status-network-analysis-digital-twin-03.jpg
 softwareDescription:
-  heading: En digital tvilling
-  subheading: Broen mellom den fysiske og den digitale oppdrettsmerden
+  heading: Broen mellom den fysiske og den digitale oppdrettsmerden
+  subheading: En digital tvilling
   body: >-
     En digital tvilling er en digital representasjon av et fysisk objekt og dets
     omgivelser i sanntid. Den tar i bruk produktdata, sensordata, matematiske
