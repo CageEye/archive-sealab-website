@@ -6,10 +6,10 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-logo_url: static/img/sealab-blue.svg
+logo_url: /img/sealab-blue.svg
 editor:
   preview: false
-display_url: https://elastic-johnson-a88f73.netlify.com/
+display_url:  https://www.sealab.no/
 
 collections:
   - name: "blog"

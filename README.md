@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/40e64955-096b-4c38-99f9-e131c5c8c0d2/deploy-status)](https://app.netlify.com/sites/sealab-no/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d992e6f2-de9b-4ed2-b9ec-1c72014a1a1a/deploy-status)](https://app.netlify.com/sites/sealab-no/deploys)
 
 # SEALAB WEBSITE - Built with Gatsbyjs
 **Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
