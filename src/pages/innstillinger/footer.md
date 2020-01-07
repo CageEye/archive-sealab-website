@@ -14,6 +14,8 @@ mainNavigation:
     title: Fôroptimalisering
   - path: /losninger/helseovervakning
     title: Helseovervåkning
+  - path: /digital-tvilling
+    title: Digital tvilling
 softwareNavigation:
   - path: /apper/g-force
     title: G-force
