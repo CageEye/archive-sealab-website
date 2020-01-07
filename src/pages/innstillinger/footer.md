@@ -44,6 +44,12 @@ companyOffices:
       - Gaustadalléen 21
       - '0349 Oslo, Norge'
     title: Oslo
+  - addressItems:
+      - SEALAB BERGEN
+      - Gatenummer 1
+      - inngang Y
+      - 7060 BERGEN
+    title: Fiktivt kontor
 callToAction:
   buttonPath: /kontakt
   buttonText: Kontakt oss
