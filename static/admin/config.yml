@@ -67,6 +67,19 @@ collections:
       - {label: "Høyre innhold", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
+  
+  - name: "simple-pages"
+    label: "Rene tekst sider"
+    folder: "src/pages/"
+    create: true
+    description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
+    filter: {field: "templateKey", value: "simple-page"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+      - {label: "Tittel", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Innhold", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Navigasjon & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
