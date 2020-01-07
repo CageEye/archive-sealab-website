@@ -6,6 +6,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+logo_url: static/img/sealab-blue.svg
+editor:
+  preview: false
+display_url: https://elastic-johnson-a88f73.netlify.com/
+
 collections:
   - name: "blog"
     label: "Blogg"
@@ -137,6 +142,7 @@ collections:
               - label: Addresselinjer
                 name: addressItems
                 widget: list
+                hint: "Separer ny linje med komma: adresselinje 1, adresselinje 2, postnummer, poststed"
           - label: "Call to action"
             name: "callToAction"
             widget: "object"
@@ -149,7 +155,7 @@ collections:
 
 
   - name: "pages"
-    label: "Vanlige sider"
+    label: "INAKTIV - Vanlige sider"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
