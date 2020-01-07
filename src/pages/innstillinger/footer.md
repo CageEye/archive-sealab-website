@@ -8,19 +8,19 @@ mainNavigation:
     title: BlueThink™ GO
   - path: /blogg
     title: Blogg
-  - path: /losninger/gapefrekvens
-    title: Stressnivå
   - path: /losninger/foroptimalisering
     title: Fôroptimalisering
   - path: /losninger/helseovervakning
     title: Helseovervåkning
+  - path: /losninger/gapefrekvens
+    title: Stressnivå
   - path: /digital-tvilling
     title: Digital tvilling
 softwareNavigation:
-  - path: /apper/g-force
-    title: G-force
   - path: /apper/ais
     title: AIS
+  - path: /apper/g-force
+    title: G-force
   - path: /apper/weather
     title: Weather
   - path: /apper/aqualog
