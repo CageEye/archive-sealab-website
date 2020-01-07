@@ -8,7 +8,7 @@ subheading: >-
   ideer skal settes til livs for første gang. 
 featuredimage: /img/status-network-analysis-digital-twin-03.jpg
 softwareDescription:
-  heading: Broen mellom den fysiske og den digitale oppdrettsmerden
+  heading: Broen mellom den fysiske og den digitale verden
   subheading: Den digitale tvillingen
 seoDescription: >-
   En digital kopi av et oppdrettsanlegg kan brukes til å optimere den daglige
