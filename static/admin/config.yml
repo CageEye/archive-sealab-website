@@ -97,25 +97,25 @@ collections:
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "2 - Apper"
             name: "softwareNavigation"
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "3 - Hardware"
             name: "hardwareNavigation"
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "4 - Om"
             name: "secondaryNavigation"
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
 
   
   - name: "pages"
