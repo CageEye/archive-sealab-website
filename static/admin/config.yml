@@ -33,7 +33,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-page"}
       - {label: "Tittel", name: "title", widget: "string"}
-      - {label: "Overskrift", name: "title", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
       - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
 
@@ -43,9 +43,6 @@ collections:
         fields:
           - {label: "Venstre overskrift", name: "heading", widget: "string"}
           - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
-          - label: "Høyre tekst"
-            name: "body"
-            widget: "markdown"
       - {label: "Høyre innhold", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
@@ -69,9 +66,6 @@ collections:
         fields:
           - {label: "Venstre overskrift", name: "heading", widget: "string"}
           - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
-          - label: "Høyre tekst"
-            name: "body"
-            widget: "markdown"
       - {label: "Høyre innhold", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
