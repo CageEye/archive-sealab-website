@@ -73,6 +73,7 @@ collections:
       - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
   
+      
   - name: "simple-pages"
     label: "Rene tekst sider"
     folder: "src/pages/"
@@ -85,6 +86,8 @@ collections:
       - {label: "Tittel", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
       - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Innhold", name: "body", widget: "markdown"}
+  
+  
   - name: "settings"
     label: "Navigasjon & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
@@ -155,18 +158,28 @@ collections:
 
 
   - name: "pages"
-    label: "INAKTIV - Vanlige sider"
+    label: "Vanlige sider"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Forside"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: Tittel, name: title, widget: string}
+          - {label: Overskrift, name: heading, widget: string}
+          - {label: Underoverskrift, name: subheading, widget: string}
+          - label: "Fokusområder"
+            name: threeColumns
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Tre kolonner"
+                name: columns
+                widget: list
+                fields:
+                  - {label: Underoverskrift, name: icon, widget: image, default: "/img/health.svg"}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+                  - {label: "Knapp - link", name: buttonPath, widget: string}
