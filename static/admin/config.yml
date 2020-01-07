@@ -36,8 +36,7 @@ collections:
       - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
       - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
-
-      - label: "Todelt seksjon"
+      - label: "Venstre seksjon"
         name: "softwareDescription"
         widget: "object"
         fields:
@@ -64,8 +63,8 @@ collections:
         name: "softwareDescription"
         widget: "object"
         fields:
-          - {label: "Venstre overskrift", name: "heading", widget: "string"}
           - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+          - {label: "Venstre overskrift", name: "heading", widget: "string"}
       - {label: "Høyre innhold", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
