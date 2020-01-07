@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Gapefrekvens
-featuredImage: /img/gapefrekvens-graf.png
+featuredimage: /img/gapefrekvens-graf.png
 heading: Stressnivå basert på gapefrekvens
 subheading: Sanntidsinformasjon om stressnivået i merdene, basert på fiskens gapefrekvens.
 seoDescription: Sanntidsinformasjon om stressnivået i merdene, basert på fiskens gapefrekvens.
