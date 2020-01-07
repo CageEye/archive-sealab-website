@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Lusetelling
-featuredImage: /img/lusgjenkjenning.jpg
+featuredimage: /img/lusgjenkjenning.jpg
 heading: Lusetelling
 subheading: Automatisk lusetelling gir deg sanntidsinformasjon om lusepåslaget i dine merder til enhver tid.
 seoDescription: Automatisk lusetelling gir deg sanntidsinformasjon om lusepåslaget i dine merder til enhver tid.

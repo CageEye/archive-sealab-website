@@ -1,7 +1,7 @@
 ---
 templateKey: software-page
 title: Fôroptimalisering
-featuredImage: /img/Simple blob detection_screenshot_17.12.2019.png
+featuredimage: /img/Simple blob detection_screenshot_17.12.2019.png
 heading: Fôroptimalisering
 subheading: Pelletdeteksjon, strømdata og fôrets synkehastighet i kombinasjon med historisk informasjon gir deg nødvendig beslutningsgrunnlag for optimalisert fôring. 
 seoDescription: Pelletdeteksjon, strømdata og fôrets synkehastighet i kombinasjon med historisk informasjon gir deg nødvendig beslutningsgrunnlag for optimalisert fôring. 
