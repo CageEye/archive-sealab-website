@@ -10,19 +10,7 @@ featuredimage: /img/quintus.jpg
 softwareDescription:
   heading: Quintus LED
   subheading: 360 grader LED-lys
-  body: >-
-    De 5 separate LED-lysene kan kontrolleres og dimmes mellom 0-100%. For å
-    unngå å stresse fisken, har lyset justerbar dimmetid. Designet og plassering
-    i forhold til kamera legger til rette for ønskelig lysnivå på målobjektet i
-    tillegg til lav backscattering. Lyset kontrolleres enkelt ved bruk av SEALAB
-    BlueThink TM.
-
-
-    En robust konstruksjon med et intelligent design garanterer lang levetid med
-    minimalt vedlikehold. Lyset har en maksimal effekt på 40 000 lumen og har en
-    levetid på 50 000 timer.
 ---
+De 5 separate LED-lysene kan kontrolleres og dimmes mellom 0-100%. For å unngå å stresse fisken, har lyset justerbar dimmetid. Designet og plassering i forhold til kamera legger til rette for ønskelig lysnivå på målobjektet i tillegg til lav backscattering. Lyset kontrolleres enkelt ved bruk av SEALAB BlueThink™.
 
-De 5 separate LED-lysene kan kontrolleres og dimmes mellom 0-100%. For å unngå å stresse fisken, har lyset justerbar dimmetid. Designet og plassering i forhold til kamera legger til rette for ønskelig lysnivå på målobjektet i tillegg til lav backscattering. Lyset kontrolleres enkelt ved bruk av SEALAB BlueThink TM.
-
-En robust konstruksjon med et intelligent design garanterer lang levetid med minimalt vedlikehold. Lyset har en maksimal effekt på 40 000 lumen og har en levetid på 50 000 timer.
+En robust konstruksjon med et effektivt design garanterer lang levetid med minimalt vedlikehold. Lyset har en maksimal effekt på 40 000 lumen og har en levetid på mer enn 50 000 timer (omtrent 5 år med kontinuerlig bruk).
