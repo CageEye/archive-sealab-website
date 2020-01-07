@@ -128,7 +128,7 @@ export const BlogPageQuery = graphql`
             date
             featuredimage {
               childImageSharp {
-                fluid(maxWidth: 450, maxHeight: 270) {
+                fluid(maxWidth: 1180) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
