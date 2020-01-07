@@ -88,7 +88,34 @@ collections:
                 fields:
                   - {label: Overskrift, name: title, widget: string}
                   - {label: Lenke, name: link, widget: string}
-
+      - file: "src/pages/innstillinger/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields: 
+          - label: "1 - Hovedsider"
+            name: "mainNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+          - label: "2 - Apper"
+            name: "softwareNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+          - label: "3 - Hardware"
+            name: "hardwareNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+          - label: "4 - Om"
+            name: "secondaryNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
 
   
   - name: "pages"
