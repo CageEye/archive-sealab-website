@@ -122,15 +122,32 @@ collections:
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
           - label: "4 - Om"
             name: "secondaryNavigation"
             widget: "list"
             fields: 
               - {label: Overskrift, name: title, widget: string}
               - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Bedriftskontorer"
+            name: "companyOffices"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - label: Addresselinjer
+                name: addressItems
+                widget: list
+          - label: "Call to action"
+            name: "callToAction"
+            widget: "object"
+            fields:
+              - {label: "Tittel", name: "title", widget: "string"}
+              - {label: "Kort beskrivelse", name: "description", widget: "string"}
+              - {label: "Knappetekst", name: "buttonText", widget: "string"}
+              - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
 
-  
+
+
   - name: "pages"
     label: "Vanlige sider"
     files:

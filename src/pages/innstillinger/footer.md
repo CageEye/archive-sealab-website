@@ -1,39 +1,52 @@
 ---
 mainNavigation:
-  - path: /
-    title: Hjem
-  - path: /bluethink
-    title: BlueThink™ Kontrollrom
-  - path: /bluethink-go
-    title: BlueThink™ GO
-  - path: /blogg
-    title: Blogg
-  - path: /losninger/gapefrekvens
-    title: Stressnivå
-  - path: /losninger/foroptimalisering
-    title: Fôroptimalisering
-  - path: /losninger/helseovervakning
-    title: Helseovervåkning
-softwareNavigation:
-  - path: /apper/ais
-    title: AIS
-  - path: /apper/g-force
-    title: G-force
-  - path: /apper/weather
-    title: Weather
-  - path: /apper/aqualog
-    title: Aqualog
+  - title: Hjem
+    path: /
+  - title: BlueThink™ Kontrollrom
+    path: /bluethink
+  - title: BlueThink™ GO
+    path: /bluethink-go
+  - title: Blogg
+    path: /blogg
+  - title: Stressnivå
+    path: /losninger/gapefrekvens
+  - title: Fôroptimalisering
+    path: /losninger/foroptimalisering
+  - title: Helseovervåkning
+    path: /losninger/helseovervakning
 hardwareNavigation:
-  - path: /undervannskamera
-    title: Undervannskamera
-  - path: /undervannslys
-    title: Undervannslys
-  - path: /digital-tvilling
-    title: Test
+  - title: Undervannskamera
+    path: /undervannskamera
+  - title: Undervannslys
+    path: /undervannslys
+softwareNavigation:
+  - title: AIS
+    path: /apper/ais
+  - title: G-force
+    path: /apper/g-force
+  - title: Weather
+    path: /apper/weather
+  - title: Aqualog
+    path: /apper/aqualog
 secondaryNavigation:
-  - path: /kontakt
-    title: Kontakt
-  - path: /historie
-    title: Historie
+  - title: Kontakt
+    path: /kontakt
+  - title: Historie
+    path: /historie
+companyOffices:
+  - title: 'Hovedkontor'
+    addressItems: 
+      - 'SEALAB'
+      - 'Transittgata 14, inngang A'
+      - '7042 Trondheim'
+  - title: 'Oslo'
+    addressItems: 
+      - 'Forskningsparken'
+      - 'Gaustadalléen 21'
+      - '0349 Oslo, Norge'
+callToAction:
+  title: Ønsker du å booke en demo?
+  description: Vi viser gladelig frem våre produkter.
+  buttonText: Kontakt oss
+  buttonPath: /kontakt
 ---
-
