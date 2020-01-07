@@ -1,12 +1,12 @@
 ---
 menuLinks:
-  - link: '#'
-    title: BlueThink™
-    dropdown:
+  - dropdown:
       - link: /bluethink
         title: BlueThink™ Kontrollrom
       - link: /bluethink-go
         title: BlueThink™ GO
+    link: '#'
+    title: BlueThink™
   - dropdown:
       - link: /apper/ais
         title: AIS
@@ -36,5 +36,7 @@ menuLinks:
     title: Fokusområder
   - link: /blogg
     title: Blogg
-
+  - link: /digital-tvilling
+    title: Digital tvilling
 ---
+
