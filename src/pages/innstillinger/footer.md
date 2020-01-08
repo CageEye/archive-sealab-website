@@ -8,12 +8,12 @@ mainNavigation:
     title: BlueThink™ GO
   - path: /blogg
     title: Blogg
+  - path: /losninger/gapefrekvens
+    title: Stressnivå
   - path: /losninger/foroptimalisering
     title: Fôroptimalisering
   - path: /losninger/helseovervakning
     title: Helseovervåkning
-  - path: /losninger/gapefrekvens
-    title: Stressnivå
   - path: /digital-tvilling
     title: Digital tvilling
 softwareNavigation:
