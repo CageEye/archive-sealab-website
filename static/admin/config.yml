@@ -251,7 +251,6 @@ collections:
             widget: markdown
           - label: "INAKTIV - Sitater"
             name: customerQuotes
-            hint: "Denne er inaktiv inntil videre. Vil ikke bli vist på hjemmesiden."
             widget: list
             fields:
               - {label: "H1 Overskrift", name: heading, widget: string}
