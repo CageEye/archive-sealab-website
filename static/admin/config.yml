@@ -202,7 +202,7 @@ collections:
                 name: cta
                 widget: object
                 fields:
-                  - {label: "URL", name: "path", widget: "string", hint: "OBS! Ikke ta med domene (f.eks sealab.no)"}
+                  - {label: "URL", name: "url", widget: "string", hint: "OBS! Må være en URL, altså en ekstern link som inkluderer domene."}
                   - {label: "Knappetekst", name: "text", widget: string }
               - label: Data - ikoner og beskrivelse
                 name: dataBoxes
@@ -210,6 +210,50 @@ collections:
                 fields:
                   - {label: "Overskrift", name: "heading", widget: string, hint: "Helst ikke mer enn 14 bokstaver"}
                   - {label: "Ikon", name: "icon", widget: image}
-            
-
-
+          - label: "To kolonner (responsivt design)"
+            name: responsiveDesignSection
+            widget: object
+            fields:
+              - {label: "Featured Image", name: "featuredimage", widget: image}
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: Knapp
+                name: cta
+                widget: object
+                fields:
+                  - {label: "URL", name: "path", widget: "string", hint: "OBS! Ikke ta med domene (f.eks sealab.no)"}
+                  - {label: "Knappetekst", name: "text", widget: string }
+          - label: "Ekspanderbar liste (livestream, timelaps osv)"
+            name: expandableBoxes
+            widget: object
+            fields:
+              - {label: "Featured Image", name: "featuredimage", widget: image}
+              - label: "Ekspanderbar liste"
+                name: boxes
+                widget: list
+                fields:
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          - label: "3 kolonner med ikon"
+            name: featuredData
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - label: "Ekspanderbar liste"
+                name: featuredDataBoxes
+                widget: list
+                fields:
+                  - {label: "Ikon", name: "icon", widget: image}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          - label: "Fritekst"
+            name: body
+            widget: markdown
+          - label: "INAKTIV - Sitater"
+            name: customerQuotes
+            widget: list
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "Navn på person", name: author, widget: string}
+              - {label: "Jobstilling", name: position, widget: string}

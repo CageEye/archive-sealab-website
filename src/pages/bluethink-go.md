@@ -4,7 +4,14 @@ title: BlueThink™ GO
 heading: BlueThink™ GO
 subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!'
 featuredimage: /img/allInOne.png
+
 furtherInformationData:
+  description: >-
+    BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
+    din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
+    hentes hovedsakelig fra en værstasjon installert på fôrflåten og fra
+    sensorer installert i merden.
+  heading: Hvordan er forholdene på ditt anlegg akkurat nå?
   cta:
     text: Se demo - SEALAB Ocean Space Center
     url: 'http://sealab.live/'
@@ -37,12 +44,7 @@ furtherInformationData:
       icon: /img/btgo-x-100-gforce.svg
     - heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
-  description: >-
-    BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
-    din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
-    hentes hovedsakelig fra en værstasjon installert på fôrflåten og fra
-    sensorer installert i merden.
-  heading: Hvordan er forholdene på ditt anlegg akkurat nå?
+
 responsiveDesignSection:
   cta:
     path: /bluethink-go/meld-interesse
@@ -94,6 +96,14 @@ featuredData:
       heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
   heading: Økt sikkerhet
+
+customerQuotes:
+  - heading: BlueThink™ GO har gitt meg muligheten til å ta viktige avgjørelser, selv når jeg ikke er ute på anlegget
+    description: Lokalitetsleder på Helligholmen, Harry Sørø, er opptatt av at kun de beste software tjenestene blir tatt i bruk på hans anlegg, slik at de kan sikre optimal og effektiv oppdrett.
+    author: Harry Sørø
+    position: Jobber for Sinkaberg Hansen
+
+
 ---
 
 Arbeidsplassene i havbruksnæringen er klassifisert som de nest farligste i Norge. Sikkerhet må derfor tas på alvor. BlueThink™ GO hjelper deg å ta et steg i riktig retning.
