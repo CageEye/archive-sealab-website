@@ -26,12 +26,12 @@ menuLinks:
     link: '#'
     title: Hardware
   - dropdown:
+      - link: /losninger/gapefrekvens
+        title: Stressnivå
       - link: /losninger/foroptimalisering
         title: Fôroptimalisering
       - link: /losninger/helseovervakning
         title: Helseovervåkning
-      - link: /losninger/gapefrekvens
-        title: Stressnivå
     link: '#'
     title: Fokusområder
   - link: /digital-tvilling
