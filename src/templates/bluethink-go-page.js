@@ -227,12 +227,6 @@ export const BluethinkGOPageQuery = graphql`
             }
           }
         }
-        customerQuotes {
-          title
-          description
-          author
-          position
-        }
       }
     }
   }

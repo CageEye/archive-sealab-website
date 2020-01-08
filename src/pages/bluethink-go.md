@@ -76,7 +76,7 @@ furtherInformationData:
       icon: /img/btgo-x-100-waveheight.svg
 
 customerQuotes:
-  - title: BlueThink™ GO har gitt meg muligheten til å ta viktige avgjørelser, selv når jeg ikke er ute på anlegget
+  - heading: BlueThink™ GO har gitt meg muligheten til å ta viktige avgjørelser, selv når jeg ikke er ute på anlegget
     description: Lokalitetsleder på Helligholmen, Harry Sørø, er opptatt av at kun de beste software tjenestene blir tatt i bruk på hans anlegg, slik at de kan sikre optimal og effektiv oppdrett.
     author: Harry Sørø
     position: Jobber for Sinkaberg Hansen
