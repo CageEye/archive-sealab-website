@@ -251,16 +251,10 @@ collections:
             widget: markdown
           - label: "INAKTIV - Sitater"
             name: customerQuotes
-            widget: object
+            hint: "Denne er inaktiv inntil videre. Vil ikke bli vist på hjemmesiden."
+            widget: list
             fields:
               - {label: "H1 Overskrift", name: heading, widget: string}
               - {label: "Beskrivelse", name: description, widget: text}
               - {label: "Navn på person", name: author, widget: string}
               - {label: "Jobstilling", name: position, widget: string}
-              - label: "Ekspanderbar liste"
-                name: featuredDataBoxes
-                widget: list
-                fields:
-                  - {label: "Ikon", name: "icon", widget: image}
-                  - {label: "H3 Overskrift", name: heading, widget: string}
-                  - {label: "Beskrivelse", name: description, widget: text}
