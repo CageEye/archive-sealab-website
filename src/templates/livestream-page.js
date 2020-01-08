@@ -38,7 +38,7 @@ const carouselItems = [
     img: controlroomImage,
     title: 'BlueThink™ Apps',
     description:
-      'Fra BlueThink Kontrollrom har du tilgang til Livestream i tillegg til alle dine BlueThink Apps. ',
+      'Fra BlueThink Kontrollrom har du tilgang til Livestream i tillegg til alle dine BlueThink™ Apps. ',
   },
   {
     img: tabletBTGOImage,
@@ -71,8 +71,8 @@ export const LivestreamPageTemplate = ({
                 Kontinuerlig overvåking er den beste beslutningsstøtten som
                 finnes. Med vår unike kamerateknologi og software, som
                 kommuniserer sammen (IoT), får du høykvalitets overvåkingsbilder
-                rett inn i ditt BlueThink Kontrollrom. Et lynskarpt blikk på det
-                som foregår i merdene kan bidra til høyere forutsigbarhet,
+                rett inn i ditt BlueThink™ Kontrollrom. Et lynskarpt blikk på
+                det som foregår i merdene kan bidra til høyere forutsigbarhet,
                 lavere dødelighet og bedre fiskevelferd.
               </p>
               <Button
@@ -125,7 +125,7 @@ export const LivestreamPageTemplate = ({
           <div className="columns">
             <div className="column is-6">
               <Title
-                title="BlueThink Kontrollrom"
+                title="BlueThink™ Kontrollrom"
                 subtitle="Hardware og Software, Produsert i Norge"
                 description="Både hardware og software produseres i Norge. Slik får du en lynrask levering og driftsikker løsning. Produktene er utviklet slik at de behøver minimalt med vedlikehold og er enkle å installere. Ønsker du livestream fra ditt anlegg, kan vi sette opp et helhetlig system på få timer. Skulle du trenge hjelp, er service telefonen bemannet 24 timer i døgnet."
                 position="left"
@@ -149,7 +149,7 @@ export const LivestreamPageTemplate = ({
         <div className="container">
           <Title
             title="Livestream løsning"
-            description="BlueThink Kontrollrom baseres på interaksjon mellom en rekke produkter som kombinert gir førsteklasses overvåkning av ditt anlegget. "
+            description="BlueThink™ Kontrollrom baseres på interaksjon mellom en rekke produkter som kombinert gir førsteklasses overvåkning av ditt anlegget. "
             position="center"
           />
           <Carousel items={carouselItems} />
