@@ -4,14 +4,7 @@ title: BlueThink™ GO
 heading: BlueThink™ GO
 subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!'
 featuredimage: /img/allInOne.png
-
 furtherInformationData:
-  description: >-
-    BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
-    din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
-    hentes hovedsakelig fra en værstasjon installert på fôrflåten og fra
-    sensorer installert i merden.
-  heading: Hvordan er forholdene på ditt anlegg akkurat nå?
   cta:
     text: Se demo - SEALAB Ocean Space Center
     url: 'http://sealab.live/'
@@ -44,17 +37,21 @@ furtherInformationData:
       icon: /img/btgo-x-100-gforce.svg
     - heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
-
+  description: >-
+    BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
+    din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
+    hentes hovedsakelig fra en værstasjon installert på fôrflåten og fra
+    sensorer installert i merden.
+  heading: Hvordan er forholdene på anlegget ditt akkurat nå?
 responsiveDesignSection:
   cta:
     path: /bluethink-go/meld-interesse
     text: Meld interesse
   description: >-
     Med BlueThink™ GO kan du kjapt og enkelt få oversikt over status på ditt
-    anlegg, uansett hvor du selv befinner deg. Sjekk forholdene på PC-en hjemme
-    i stua, fra mobilen på vei til jobb eller hvor ellers du måtte befinne deg.
-    Brukerautentisering med brukernavn og passord sikrer at informasjonen på
-    siden din forblir privat.
+    anlegg, uansett hvor du befinner deg. Sjekk forholdene fra PC-en hjemme i
+    stua, mobilen på vei til jobb eller hvor du måtte befinne deg.
+    Brukerautentisering sikrer at informasjonen på siden din forblir privat.
   heading: 'Tilgjengelig på alle enheter, takket være et moderne og responsivt design'
   featuredimage: /img/desktop-and-mobile-blethink-go.png
 expandableBoxes:
@@ -64,16 +61,16 @@ expandableBoxes:
         direktestrømming fra overflatekameraet på fôrflåten kan du til enhver
         tid følge med på anlegget, dette er spesielt verdifullt ved dårlig vær
         når de ansatte er evakuert.
-      heading: Live stream kamera
+      heading: Livestream kamera
     - description: >-
-        Oversikt over historisk data for viktige parametre som oksygennivå,
+        Oversikt over historiske data for viktige parametre som oksygennivå,
         salinitet og sjøtemperatur er tilgjengelig i BlueThink™ GO.
-      heading: Historisk data
+      heading: Historiske data
     - description: >-
-        Ved uvær eller andre spesielle situasjoner kan det være nyttig å se en
-        timelapse av hendelsene fra den aktuelle dagen, eller et spesifikt
-        tidspunkt. Du velger selv hvor langt tilbake i tid du ønsker å ta vare
-        på videoene dine.
+        Hva har skjedd det siste døgnet? Ved uvær eller andre spesielle
+        situasjoner kan det være nyttig å se en timelapse av hendelsene fra den
+        aktuelle dagen, eller et spesifikt tidspunkt. Du velger selv hvor langt
+        tilbake i tid du ønsker å ta vare på videoene dine.
       heading: Time-lapse
     - description: >-
         Se og bli sett av fartøy i ditt område, samtidig som du automatisk
@@ -96,14 +93,16 @@ featuredData:
       heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
   heading: Økt sikkerhet
-
 customerQuotes:
-  - heading: BlueThink™ GO har gitt meg muligheten til å ta viktige avgjørelser, selv når jeg ikke er ute på anlegget
-    description: Lokalitetsleder på Helligholmen, Harry Sørø, er opptatt av at kun de beste software tjenestene blir tatt i bruk på hans anlegg, slik at de kan sikre optimal og effektiv oppdrett.
-    author: Harry Sørø
+  - author: Harry Sørø
+    description: >-
+      Lokalitetsleder på Helligholmen, Harry Sørø, er opptatt av at kun de beste
+      software tjenestene blir tatt i bruk på hans anlegg, slik at de kan sikre
+      optimal og effektiv oppdrett.
+    heading: >-
+      BlueThink™ GO har gitt meg muligheten til å ta viktige avgjørelser, selv
+      når jeg ikke er ute på anlegget
     position: Jobber for Sinkaberg Hansen
-
-
 ---
 
 Arbeidsplassene i havbruksnæringen er klassifisert som de nest farligste i Norge. Sikkerhet må derfor tas på alvor. BlueThink™ GO hjelper deg å ta et steg i riktig retning.
