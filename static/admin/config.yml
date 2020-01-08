@@ -234,3 +234,18 @@ collections:
                 fields:
                   - {label: "H3 Overskrift", name: heading, widget: string}
                   - {label: "Beskrivelse", name: description, widget: text}
+          - label: "3 kolonner med ikon"
+            name: featuredData
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - label: "Ekspanderbar liste"
+                name: featuredDataBoxes
+                widget: list
+                fields:
+                  - {label: "Ikon", name: "icon", widget: image}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          - label: "Fritekst"
+            name: body
+            widget: markdown
