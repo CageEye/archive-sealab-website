@@ -17,6 +17,8 @@ furtherInformationData:
       icon: /img/btgo-x-100-pressure.svg
     - heading: Nedbør
       icon: /img/btgo-x-100-rainfall.svg
+    - heading: Sol
+      icon: /img/btgo-x-100-sunup.svg
     - heading: Vanntemperatur
       icon: /img/btgo-x-100-watertemp.svg
     - heading: Havnivå
@@ -37,8 +39,6 @@ furtherInformationData:
       icon: /img/btgo-x-100-gforce.svg
     - heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
-    - heading: Sol
-      icon: /img/btgo-x-100-sunup.svg
   description: >-
     BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
     din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
