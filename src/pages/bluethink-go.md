@@ -2,7 +2,7 @@
 templateKey: bluethink-go-page
 title: BlueThink™ GO
 heading: BlueThink™ GO
-subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!!'
+subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!'
 featuredimage: /img/allInOne.png
 furtherInformationData:
   cta:
@@ -37,6 +37,8 @@ furtherInformationData:
       icon: /img/btgo-x-100-gforce.svg
     - heading: Bølgehøyde
       icon: /img/btgo-x-100-waveheight.svg
+    - heading: Sol
+      icon: /img/btgo-x-100-sunup.svg
   description: >-
     BlueThink™ GO gir deg full oversikt over både værsituasjon og sjøforhold på
     din lokasjon. Sanntidsinformasjon om alt fra oksygennivå til nedbørsmengde
