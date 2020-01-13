@@ -11,7 +11,7 @@ description: >-
   løsninger og ny teknologi. I den forbindelse har også interessen rundt
   digitale tvillinger vokst. 
 featuredpost: true
-featuredimage: /img/status-network-analysis-digital-twin-02.jpg
+featuredimage: /img/digital-twin.jpg
 ---
 ## En digitalisert oppdrettsnæring gir gode levekår for digitale tvillinger
 
