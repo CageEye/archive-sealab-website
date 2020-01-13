@@ -59,7 +59,7 @@ responsiveDesignSection:
 expandableBoxes:
   boxes:
     - description: >-
-        Tjenesten alle har ventet på - Live stream fra ditt anlegg! Med
+        Tjenesten alle har ventet på - Livestream fra ditt anlegg! Med
         direktestrømming fra overflatekameraet på fôrflåten kan du til enhver
         tid følge med på anlegget, dette er spesielt verdifullt ved dårlig vær
         når de ansatte er evakuert.
