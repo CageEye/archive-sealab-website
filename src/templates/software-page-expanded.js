@@ -20,6 +20,7 @@ export const SoftwarePageTemplate = ({
   image,
   expandableBoxes,
   description,
+  freeText,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -58,7 +59,14 @@ export const SoftwarePageTemplate = ({
           objectFit="contain"
         />
       </CollapsibleWithImage>
-
+      <section
+        id="btgo-page-content"
+        className="section has-dark-background is-medium"
+      >
+        <div className="container">
+          <PostContent content={freeText} />
+        </div>
+      </section>
       <section
         id="high-service"
         className="section is-large"
@@ -99,6 +107,7 @@ const SoftwarePage = ({ data }) => {
         expandableBoxes={frontmatter.expandableBoxes}
         image={frontmatter.featuredimage.childImageSharp.fluid}
         description={frontmatter.softwareDescription}
+        freeText={frontmatter.freeText}
       />
       <RecentArticles />
     </Layout>
@@ -150,6 +159,7 @@ export const SoftwarePageQuery = graphql`
             description
           }
         }
+        freeText
       }
     }
   }

@@ -23,8 +23,7 @@ expandableBoxes:
         tid følge med på anlegget, dette er spesielt verdifullt ved dårlig vær
         når de ansatte er evakuert.
       heading: Live stream kamera
-
+freeText: Test
 ---
 
-
-
+Yoyo
