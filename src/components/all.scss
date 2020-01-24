@@ -184,6 +184,7 @@ body {
   }
   .has-dark-background {
     background: $dark;
+    @include text_Light;
   }
   .section {
     @media screen and (max-width: $tablet) {
@@ -1078,8 +1079,11 @@ section#high-service {
   }
 }
 
-section#btgo-page-content {
-  p {
+section.free-text-centered {
+  background-color: $background-color-dark;
+  text-align: center;
+  @include text_Light;
+  p, & > div {
     font-family: $primaryFont;
     text-align: center;
     @include text_Light;
@@ -1090,6 +1094,13 @@ section#btgo-page-content {
     font-size: 12px;
     margin-top: 30px;
   }
+  p * {
+    box-shadow: none !important;
+    background: transparent;
+  }
+  span.gatsby-resp-image-wrapper {
+    width: 400px;
+  }
   @media only screen and (min-width: $tablet) {
     padding-top: 0;
     .button {
@@ -1098,8 +1109,10 @@ section#btgo-page-content {
       margin-top: 30px;
       font-size: 14px;
     }
+
   }
 }
+
 
 section#domains {
   figure.image img {
