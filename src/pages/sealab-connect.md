@@ -15,6 +15,7 @@ seoDescription: >-
   driften, forutse behov for vedlikehold eller redusere sjansen for feiltrinn
   når nye ideer skal settes til livs for første gang.
 expandableBoxes:
+  featuredimage: /img/tablet-holding-landscape-80.jpg
   boxes:
     - description: >-
         Tjenesten alle har ventet på - Live stream fra ditt anlegg! Med
