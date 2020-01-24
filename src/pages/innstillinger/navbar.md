@@ -19,12 +19,12 @@ menuLinks:
     link: '#'
     title: Apps
   - dropdown:
+      - link: /sealab-connect
+        title: SEALAB Connect
       - link: /undervannskamera
         title: Undervannskamera
       - link: /undervannslys
         title: Undervannslys
-      - link: /sealab-connect
-        title: SEALAB Connect
     link: '#'
     title: Hardware
   - dropdown:
