@@ -23,6 +23,8 @@ menuLinks:
         title: Undervannskamera
       - link: /undervannslys
         title: Undervannslys
+      - link: /sealab-connect
+        title: SEALAB Connect
     link: '#'
     title: Hardware
   - dropdown:
