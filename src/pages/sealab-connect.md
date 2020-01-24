@@ -6,8 +6,8 @@ subheading: Høyhastighets datanettverk som er åpent for tredjeparter
 featuredimage: >-
   /img/assembly_installasjon_bluethink_2020-jan-07_08-23-47pm-000_customizedview2315347740.png
 softwareDescription:
-  heading: Systemovervåkning 24/7
-  subheading: Få oppdrettsanlegget ditt på nett
+  heading: Få oppdrettsanlegget ditt på nett
+  subheading: Systemovervåkning 24/7
 expandableBoxes:
   boxes:
     - description: >-
@@ -37,6 +37,8 @@ freeText: >-
   havbruksnæringen. Systemet bruker optisk fiber av typen single mode.
   Fibertypen er valgt på grunn av sin enormt store overføringskapasitet og lave
   demping.
+
+
 
 
   Vi vet viktigheten av høy oppetid, og tilbyr derfor et nettverkssystem med
