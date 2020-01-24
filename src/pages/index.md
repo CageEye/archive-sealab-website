@@ -33,6 +33,6 @@ threeColumns:
     maskinlæring blir fôroptimalisering, helseovervåking av laks på individnivå
     og måling av stressnivå realitet.
   heading: Maskinsyn
-  subheading: Fokusområder
+  subheading: Fokus
 ---
 
