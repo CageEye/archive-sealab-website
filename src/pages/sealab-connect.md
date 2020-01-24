@@ -39,8 +39,6 @@ freeText: >-
   demping.
 
 
-
-
   Vi vet viktigheten av høy oppetid, og tilbyr derfor et nettverkssystem med
   redundans samt 24/7 systemovervåkning av driftsavbrudd. I tilfeller hvor
   SEALAB også leverer undervannskamera og merdskap overvåkes i tillegg jordfeil
