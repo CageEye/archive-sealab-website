@@ -59,10 +59,7 @@ export const SoftwarePageTemplate = ({
           objectFit="contain"
         />
       </CollapsibleWithImage>
-      <section
-        id="btgo-page-content"
-        className="section has-dark-background is-medium"
-      >
+      <section className="section has-dark-background is-medium free-text-centered">
         <div className="container">
           <PostContent content={freeText} />
         </div>

@@ -1078,8 +1078,11 @@ section#high-service {
   }
 }
 
-section#btgo-page-content {
-  p {
+section.free-text-centered {
+  background-color: $background-color-dark;
+  text-align: center;
+  @include text_Light;
+  p, & > div {
     font-family: $primaryFont;
     text-align: center;
     @include text_Light;
