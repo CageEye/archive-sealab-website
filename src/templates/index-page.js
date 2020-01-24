@@ -78,7 +78,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-4">
               <Title
-                title="BlueThink gir høykvalitets Livestream av ditt anlegg"
+                title="BlueThink™ gir høykvalitets Livestream av ditt anlegg"
                 subtitle="2D og 3D kamera"
                 position="left"
               />
@@ -142,7 +142,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           <figure className="image">
-            <img width="500px" src="/img/allInOne.png" alt="BlueThink GO" />
+            <img width="500px" src="/img/allInOne.png" alt="BlueThink™ GO" />
           </figure>
         </section>
       </div>
