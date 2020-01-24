@@ -30,6 +30,8 @@ hardwareNavigation:
     title: Undervannskamera
   - path: /undervannslys
     title: Undervannslys
+  - path: /sealab-connect
+    title: SEALAB Connect
 secondaryNavigation:
   - path: /kontakt
     title: Kontakt
