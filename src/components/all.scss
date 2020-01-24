@@ -184,6 +184,7 @@ body {
   }
   .has-dark-background {
     background: $dark;
+    @include text_Light;
   }
   .section {
     @media screen and (max-width: $tablet) {
@@ -1093,6 +1094,13 @@ section.free-text-centered {
     font-size: 12px;
     margin-top: 30px;
   }
+  p * {
+    box-shadow: none !important;
+    background: transparent;
+  }
+  span.gatsby-resp-image-wrapper {
+    width: 400px;
+  }
   @media only screen and (min-width: $tablet) {
     padding-top: 0;
     .button {
@@ -1101,8 +1109,10 @@ section.free-text-centered {
       margin-top: 30px;
       font-size: 14px;
     }
+
   }
 }
+
 
 section#domains {
   figure.image img {

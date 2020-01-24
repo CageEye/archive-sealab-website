@@ -44,7 +44,7 @@ export const SoftwarePageTemplate = ({
               <h2>{description.heading}</h2>
             </div>
             <div className="column is-7 content has-dark-background">
-              <PostContent content={content} />
+              <PostContent content={freeText} />
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export const SoftwarePageTemplate = ({
       </CollapsibleWithImage>
       <section className="section has-dark-background is-medium free-text-centered">
         <div className="container">
-          <PostContent content={freeText} />
+          <PostContent content={content} />
         </div>
       </section>
       <section

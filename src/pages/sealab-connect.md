@@ -20,19 +20,17 @@ expandableBoxes:
       heading: Live stream kamera
   featuredimage: /img/tablet-holding-landscape-80.jpg
 freeText: >-
-  Tjenesten alle har ventet på - Live stream fra ditt anlegg! Med
-  direktestrømming fra overflatekameraet på fôrflåten kan du til enhver tid
-  følge med på anlegget
-
-
-
-
-
-  ![Microsoft Azure](/img/ms-azure_logo_white.png "Microsoft Azure")
+    Yoyo
 seoDescription: >-
   En digital kopi av et oppdrettsanlegg kan brukes til å optimere den daglige
   driften, forutse behov for vedlikehold eller redusere sjansen for feiltrinn
   når nye ideer skal settes til livs for første gang.
 ---
 
-Yoyo
+
+Tjenesten alle har ventet på - Live stream fra ditt anlegg! Med
+direktestrømming fra overflatekameraet på fôrflåten kan du til enhver tid
+følge med på anlegget
+
+
+![Microsoft Azure](/img/ms-azure_logo_white.png "Microsoft Azure")
