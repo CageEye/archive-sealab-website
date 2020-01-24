@@ -18,6 +18,7 @@ export const SoftwarePageTemplate = ({
   heading,
   subheading,
   image,
+  expandableBoxes,
   description,
 }) => {
   const PostContent = contentComponent || Content;
@@ -95,6 +96,7 @@ const SoftwarePage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        expandableBoxes={frontmatter.expandableBoxes}
         image={frontmatter.featuredimage.childImageSharp.fluid}
         description={frontmatter.softwareDescription}
       />
@@ -114,7 +116,7 @@ SoftwarePage.propTypes = {
 export default SoftwarePage;
 
 export const SoftwarePageQuery = graphql`
-  query SoftwarePage($id: String!) {
+  query SoftwarePageExpanded($id: String!) {
     index: markdownRemark(id: { eq: $id }) {
       id
       html
