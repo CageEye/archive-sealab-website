@@ -36,10 +36,9 @@ freeText: >-
   stor kapasitet for høykvalitets kameraovervåkning og analyse i
   havbruksnæringen. Systemet bruker optisk fiber av typen single mode.
   Fibertypen er valgt på grunn av sin enormt store overføringskapasitet og lave
-  demping.
+  demping.\
 
-
-
+  \
 
   Vi vet viktigheten av høy oppetid, og tilbyr derfor et nettverkssystem med
   redundans samt 24/7 systemovervåkning av driftsavbrudd. I tilfeller hvor
