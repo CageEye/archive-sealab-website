@@ -91,7 +91,11 @@ collections:
         fields:
           - {label: "Venstre overskrift", name: "heading", widget: "string"}
           - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+<<<<<<< Updated upstream
       - {label: "Høyre innhold", name: freeText, widget: markdown}
+=======
+      - {label: "Høyre innhold", name: freeText, widget: text}
+>>>>>>> Stashed changes
       - label: "Ekspanderbar liste (livestream, timelaps osv)"
         name: expandableBoxes
         widget: object
