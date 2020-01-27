@@ -26,6 +26,8 @@ softwareNavigation:
   - path: /apper/aqualog
     title: Aqualog
 hardwareNavigation:
+  - path: /sealab-connect
+    title: SEALAB Connect
   - path: /undervannskamera
     title: Undervannskamera
   - path: /undervannslys

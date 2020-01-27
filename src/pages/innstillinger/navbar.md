@@ -19,6 +19,8 @@ menuLinks:
     link: '#'
     title: Apps
   - dropdown:
+      - link: /sealab-connect
+        title: SEALAB Connect
       - link: /undervannskamera
         title: Undervannskamera
       - link: /undervannslys
@@ -33,7 +35,7 @@ menuLinks:
       - link: /losninger/helseovervakning
         title: Helseovervåkning
     link: '#'
-    title: Fokusområder
+    title: Fokus
   - link: /digital-tvilling
     title: Digital tvilling
   - link: /blogg
