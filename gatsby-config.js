@@ -60,6 +60,7 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
