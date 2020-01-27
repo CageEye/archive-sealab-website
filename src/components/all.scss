@@ -139,9 +139,12 @@ body {
     font-family: $titleFont;
     font-style: normal;
     font-weight: normal;
-    font-size: 46px;
+    font-size: 32px;
     line-height: 54px;
     padding-bottom: 16px;
+    @media screen and (min-width: $desktop) {
+      font-size: 46px;
+    }
   }
 
   h3 {
@@ -1097,10 +1100,8 @@ section.free-text-centered {
   p * {
     box-shadow: none !important;
     background: transparent;
-    width: 400px;
-  }
-  span.gatsby-resp-image-wrapper {
-    width: 400px;
+    max-width: 400px !important;
+    margin: auto;
   }
   @media only screen and (min-width: $tablet) {
     padding-top: 0;
