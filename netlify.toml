@@ -9,7 +9,7 @@
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
-
+    Access-Control-Allow-Origin = "*"
     # Multi-key header rules are expressed with multi-line strings.
     cache-control = '''
       max-age=31536000,
