@@ -110,9 +110,6 @@ module.exports = {
         // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
-    'gatsby-redirect-from',
-    'gatsby-plugin-meta-redirect', // make sure this is always the last one
-    // `gatsby-plugin-remove-trailing-slashes`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally
