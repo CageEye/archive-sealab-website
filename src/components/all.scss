@@ -1097,6 +1097,7 @@ section.free-text-centered {
   p * {
     box-shadow: none !important;
     background: transparent;
+    width: 400px;
   }
   span.gatsby-resp-image-wrapper {
     width: 400px;
@@ -1109,7 +1110,6 @@ section.free-text-centered {
       margin-top: 30px;
       font-size: 14px;
     }
-
   }
 }
 
