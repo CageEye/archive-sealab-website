@@ -92,7 +92,7 @@ export const BluethinkGOTemplate = ({
       />
       <section
         id="btgo-page-content"
-        className="section has-dark-background is-medium"
+        className="section has-dark-background is-medium free-text-centered"
       >
         <div className="container">
           <PostContent content={content} />
