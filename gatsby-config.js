@@ -7,13 +7,8 @@ module.exports = {
     phone: '+47 729 09 111'
     },
   plugins: [
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -25,10 +20,19 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/img`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -45,19 +49,15 @@ module.exports = {
               maxWidth: 2048,
             },
           },
-          // {
-          //   resolve: 'gatsby-remark-copy-linked-files',
-          //   options: {
-          //     destinationDir: 'static',
-          //   },
-          // },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
         ],
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
     'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-plugin-netlify-cms',
