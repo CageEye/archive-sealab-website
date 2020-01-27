@@ -104,7 +104,6 @@ collections:
               - {label: "H3 Overskrift", name: heading, widget: string}
               - {label: "Beskrivelse", name: description, widget: text}
       - {label: "Fritekst", name: "body", widget: "markdown", }
-      - {label: "Avsluttende logo", required: false, name: "featuredLogo", widget: image, hint: "Valgfritt."}
       - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
       
