@@ -91,7 +91,7 @@ collections:
         fields:
           - {label: "Venstre overskrift", name: "heading", widget: "string"}
           - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
-      - {label: "Høyre innhold", name: freeText, widget: text}
+      - {label: "Høyre innhold", name: freeText, widget: markdown}
       - label: "Ekspanderbar liste (livestream, timelaps osv)"
         name: expandableBoxes
         widget: object

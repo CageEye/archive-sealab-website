@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
 import NonStretchedImage from '../components/NonStretchedImage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -44,7 +45,7 @@ export const SoftwarePageTemplate = ({
               <h2>{description.heading}</h2>
             </div>
             <div className="column is-7 content has-dark-background">
-              <PostContent content={freeText} />
+              <ReactMarkdown>{freeText}</ReactMarkdown>
             </div>
           </div>
         </div>
@@ -59,7 +60,7 @@ export const SoftwarePageTemplate = ({
           objectFit="contain"
         />
       </CollapsibleWithImage>
-      <section className="section has-dark-background is-medium free-text-centered">
+      <section className="section has-dark-background free-text-centered">
         <div className="container">
           <PostContent content={content} />
         </div>
