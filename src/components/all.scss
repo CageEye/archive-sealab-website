@@ -1109,7 +1109,9 @@ section.free-text-centered {
       margin-top: 30px;
       font-size: 14px;
     }
-
+    & > * .gatsby-resp-image-wrapper {
+      width: 400px;
+    }
   }
 }
 
