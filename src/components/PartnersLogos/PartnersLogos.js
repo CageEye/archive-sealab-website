@@ -1,47 +1,61 @@
 import React from 'react';
 import InnovasjonNorge from '../../img/Logos/innovasjon-norge.png';
 import Forskningsradet from '../../img/Logos/forskningsradet.png';
-import Nce from '../../img/Logos/nce.png';
 import NorskAkkreditering from '../../img/Logos/Kiwa+NA_MSYS004_no.svg';
-import iso9001 from '../../img/Logos/9001.png';
-import iso14001 from '../../img/Logos/14001.png';
+import iso9001 from '../../img/Logos/9001.svg';
+import iso14001 from '../../img/Logos/14001.svg';
+import azure from '../../img/Logos/azure.png';
+import sintef from '../../img/Logos/sintef.svg';
+import ntnu from '../../img/Logos/ntnu.svg';
 
 const partners = [
   {
     img: InnovasjonNorge,
     alt: 'InnovasjonNorge',
-    width: '150px',
-    height: '50px',
+    width: '100%',
+    height: '3vh',
   },
   {
     img: Forskningsradet,
     alt: 'Forskningsradet',
-    width: '158px',
-    height: '27px',
-  },
-  {
-    img: Nce,
-    alt: 'Nce',
-    width: '246px',
-    height: '40px',
+    width: '100%',
+    height: '1.5vh',
   },
   {
     img: NorskAkkreditering,
     alt: 'NorskAkkreditering',
-    width: '202px',
+    width: '100%',
+    height: '3vh',
+  },
+  {
+    img: azure,
+    alt: 'Microsoft Azure',
+    width: '100%',
+    height: '4.5vh',
+  },
+  {
+    img: sintef,
+    alt: 'SINTEF',
+    width: '100%',
+    height: '97px',
+  },
+  {
+    img: ntnu,
+    alt: 'NTNU',
+    width: '100%',
     height: '97px',
   },
   {
     img: iso9001,
     alt: 'iso9001',
-    width: '82px',
-    height: '85px',
+    width: '100%',
+    height: '5vh',
   },
   {
     img: iso14001,
     alt: 'iso9001',
-    width: '82px',
-    height: '85px',
+    width: '100%',
+    height: '5vh',
   },
 ];
 
