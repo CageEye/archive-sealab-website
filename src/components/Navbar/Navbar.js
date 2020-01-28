@@ -4,13 +4,7 @@ import classNames from 'classnames';
 import Logo from '../../img/logo.inline.svg';
 import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
-
-const cleanPath = path => {
-  if (!path) return path;
-  if (path.included('../')) {
-    return path.replace('../', '/');
-  }
-};
+import { cleanPath } from '../../utils/paths';
 
 const Navbar = class extends React.Component {
   constructor(props) {

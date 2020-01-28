@@ -5,6 +5,7 @@ import SealabLogo from '../../img/logo.inline.svg';
 import MailIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 import Button from '../Button';
+import { cleanPath } from '../../utils/paths';
 
 const year = new Date().getFullYear();
 
@@ -100,7 +101,11 @@ const List = ({ title, navigationItems }) => (
     <ul>
       {navigationItems.map(item => (
         <li key={item.title ? item.title : item}>
-          {item.path ? <Link to={item.path}>{item.title}</Link> : <p>{item}</p>}
+          {item.path ? (
+            <Link to={cleanPath(item.path)}>{item.title}</Link>
+          ) : (
+            <p>{item}</p>
+          )}
         </li>
       ))}
     </ul>
