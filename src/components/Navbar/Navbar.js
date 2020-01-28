@@ -5,6 +5,13 @@ import Logo from '../../img/logo.inline.svg';
 import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 
+const cleanPath = path => {
+  if (!path) return path;
+  if (path.included('../')) {
+    return path.replace('../', '/');
+  }
+};
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
@@ -113,7 +120,7 @@ const NavbarItems = ({ menuLinks, activeMenuItem, onClick }) => {
             key={menuItem.title}
             activeClassName="is-active"
             className={classNames('navbar-item', 'is-tab')}
-            to={menuItem.link}
+            to={cleanPath(menuItem.link)}
             onClick={onClick}
           >
             {menuItem.title}
@@ -135,7 +142,7 @@ const MenuDropDown = ({ menuItem, onClick }) => (
           key={subitem.link}
           className={classNames('navbar-item', 'is-tab')}
           activeClassName="is-active"
-          to={subitem.link}
+          to={cleanPath(subitem.link)}
           onClick={onClick}
         >
           {subitem.title}
