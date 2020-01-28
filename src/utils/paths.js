@@ -1,6 +1,6 @@
 export const cleanPath = path => {
   if (!path) return path;
-  if (path.included('../')) {
+  if (path.includes('../')) {
     return path.replace('../', '/');
   }
   return path;
