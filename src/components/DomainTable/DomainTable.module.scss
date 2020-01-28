@@ -3,12 +3,12 @@
 @mixin tableContent {
   font-family: $primaryFont;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   color: $body-light;
 }
 
 .table {
-  background-color: transparent;
+  background-color: transparent !important;
   border: 1px solid $border-dark-background;
   overflow-x: auto;
   width: 100%;

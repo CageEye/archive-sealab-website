@@ -16,15 +16,13 @@ export const DomainsList = () => {
               text="Tilbake"
               link="/bluethink-go/meld-interesse"
             />
-            <div className="columns">
-              <div className="column is-8 is-offset-2">
-                <Title
-                  position="center"
-                  title="BlueThink™ GO domener"
-                  description="I oversikten over de registrerte domenene kan du se hvilke som er tilgjengelig og hvilke som er aktiv. SEALAB har registrert domener for de aller fleste sjøbaserte oppdrettsanlegg i Norge med tillatelse til å drive oppdrett av laks eller ørret. "
-                />
-                <DomainTable domains={domains} />
-              </div>
+            <div id="domain-table">
+              <Title
+                position="center"
+                title="BlueThink™ GO domener"
+                description="I oversikten over de registrerte domenene kan du se hvilke som er tilgjengelig og hvilke som er aktiv. SEALAB har registrert domener for de aller fleste sjøbaserte oppdrettsanlegg i Norge med tillatelse til å drive oppdrett av laks eller ørret. "
+              />
+              <DomainTable domains={domains} />
             </div>
           </div>
         </section>

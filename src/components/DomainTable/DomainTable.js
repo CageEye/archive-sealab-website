@@ -10,41 +10,26 @@ const DomainTable = ({ domains }) => {
       <table className={classNames('table', 'is-fullwidth', styles.table)}>
         <thead className={styles.head}>
           <tr>
-            <th>Domene</th>
             <th>Oppdretter</th>
+            <th className="is-hidden-mobile">Lokalitet</th>
+            <th>Domene</th>
             <th className="is-hidden-mobile">Status</th>
           </tr>
         </thead>
         <tfoot className={styles.foot}>
           <tr>
-            <th>Domene</th>
             <th>Oppdretter</th>
+            <th className="is-hidden-mobile">Lokalitet</th>
+            <th>Domene</th>
             <th className="is-hidden-mobile">Status</th>
           </tr>
         </tfoot>
         <tbody className={styles.body}>
-          <tr className={classNames(styles.green, styles.tableItem)}>
-            <td>
-              <a
-                href="http://sealab.live/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classNames(styles.domain, styles.link)}
-              >
-                SEALAB.LIVE
-              </a>
-            </td>
-            <td>
-              <p className={styles.company}>SEALAB AS</p>
-            </td>
-            <td className="is-hidden-mobile">
-              <p className={classNames(styles.status, 'paragraph')}>Aktiv</p>
-            </td>
-          </tr>
           {domains.map(domainItem => (
             <TableItem
               domain={domainItem.DOMENE}
               company={domainItem.OPPDRETTER}
+              location={domainItem.LOKALITET}
               domainStatus={domainItem.STATUS}
             />
           ))}
@@ -54,17 +39,21 @@ const DomainTable = ({ domains }) => {
   );
 };
 
-const TableItem = ({ domain, company, domainStatus }) => {
+const TableItem = ({ domain, company, domainStatus, location }) => {
   let status = domainStatus;
   const isActive = status.toLowerCase() === 'aktiv';
-  if (status.length < 1) status = 'Tilgjengelig';
+  if (status.length < 1 || status.toLowerCase() === 'tilgjengelig')
+    status = 'Tilgjengelig';
   return (
     <tr className={classNames({ [styles.green]: isActive }, styles.tableItem)}>
       <td>
-        <p className={styles.domain}>{domain}</p>
+        <p className={styles.company}>{company}</p>
+      </td>
+      <td className="is-hidden-mobile">
+        <p className={classNames(styles.location)}>{location}</p>
       </td>
       <td>
-        <p className={styles.company}>{company}</p>
+        <p className={styles.domain}>{domain}</p>
       </td>
       <td className="is-hidden-mobile">
         <p className={classNames(styles.status, 'paragraph')}>{status}</p>
