@@ -112,7 +112,7 @@ const BlogPost = ({ data }) => {
         featuredImage={post.frontmatter.featuredimage.childImageSharp.fluid}
         date={post.frontmatter.date}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Blogg">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
