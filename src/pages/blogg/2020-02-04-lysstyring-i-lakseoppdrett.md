@@ -25,6 +25,8 @@ Dersom lyskilden i tillegg er nedsunket, til et dyp på minst 10 meter, vil dett
 
 De fleste oppdrettere er allerede veldig flinke til å bruke lys i vinterhalvåret for å forhindre kjønnsmodning, og bruker lys sammen med fôringskameraer mye av dagen ellers. Det er derfor kort vei fra der vi er i dag, til kontinuerlig belysning året rundt, og alle fordelene det som følger med.
 
+
+
 Kilder:
 
 1. HP Endal, GL Taranger, SO Stefansson, T Hansen. *Effects of continuous additional light on growth and sexual maturation in Atlantic salmon (Salmo salar) reared in sea cages.* 2000 Institute of marine research, Matre aquaculture research station.
