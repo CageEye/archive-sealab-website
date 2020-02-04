@@ -23,7 +23,7 @@ Dersom lyskilden i tillegg er nedsunket, til et dyp på minst 10 meter, vil dett
 
 ## **Fremtidens lakseoppdrett**
 
-De fleste oppdrettere er allerede veldig flinke til å bruke lys i vinterhalvåret for å forhindre kjønnsmodning, og bruker lys sammen med fôringskameraer mye av dagen ellers. Det er derfor kort vei fra der vi er i dag, til kontinuerlig belysning året rundt, og alle fordelene det som følger med.
+De fleste oppdrettere er allerede veldig flinke til å bruke lys i vinterhalvåret for å forhindre kjønnsmodning, og bruker lys sammen med fôringskameraer mye av dagen ellers. Det er derfor kort vei fra der vi er i dag, til kontinuerlig belysning året rundt, og alle fordelene som følger med.
 
 
 
