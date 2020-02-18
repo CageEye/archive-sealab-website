@@ -11,8 +11,8 @@ import RecentArticles from '../components/RecentArticles';
 import controlroomImage from '../img/sealab-controller-livestream.png';
 import SectionWith3Col from '../components/SectionWith3Col';
 
-import fishVideoMP4 from '../videos/fishVideo.mp4';
-import fishVideoWebM from '../videos/fishVideo.webm';
+// import fishVideoMP4 from '../videos/fishVideo.mp4';
+// import fishVideoWebM from '../videos/fishVideo.webm';
 
 export const LivestreamPageTemplate = ({
   title,
@@ -21,7 +21,7 @@ export const LivestreamPageTemplate = ({
   heading,
   subheading,
   featuredData,
-  videoDescription,
+  // videoDescription,
   features,
   lightbox,
 }) => {

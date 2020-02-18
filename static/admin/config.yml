@@ -216,7 +216,7 @@ collections:
                   - {label: "H3 Overskrift", name: heading, widget: string}
                   - {label: "Beskrivelse", name: description, widget: text}
                   - {label: "Knapp - link", name: buttonPath, widget: string}
-      - file: "src/pages/bluethink-go.md"
+      - file: "src/pages/bluethink-go/index.md"
         label: "BlueThink GO"
         name: "bluethink-go"
         fields:
