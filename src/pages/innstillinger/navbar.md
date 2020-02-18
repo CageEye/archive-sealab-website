@@ -8,17 +8,6 @@ menuLinks:
     link: '#'
     title: BlueThink™
   - dropdown:
-      - link: /apper/ais
-        title: AIS
-      - link: /apper/g-force
-        title: G-force
-      - link: /apper/weather
-        title: Weather
-      - link: /apper/aqualog
-        title: Aqualog
-    link: '#'
-    title: Apps
-  - dropdown:
       - link: /sealab-connect
         title: SEALAB Connect
       - link: /undervannskamera
