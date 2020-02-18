@@ -66,7 +66,7 @@ export const LivestreamPageTemplate = ({
           <PageContent content={content} />
         </div>
       </section>
-      <section className="video section has-dark-background">
+      {/* <section className="video section has-dark-background">
         <div className="video-background">
           <video
             style={{ objectFit: 'cover' }}
@@ -87,7 +87,7 @@ export const LivestreamPageTemplate = ({
             <p>{videoDescription}</p>
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="features" className="section has-dark-background">
         <div className="container">
           <div className="columns">
