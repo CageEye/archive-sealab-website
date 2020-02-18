@@ -12,6 +12,8 @@ import SplitWithImage from '../components/SplitWithImage';
 import CollapsibleWithImage from '../components/CollapsibleWithImage';
 import TextWithExternalCTA from '../components/TextWithExternalCTA';
 import FeaturesList from '../components/FeaturesList';
+import norwayMap from '../img/norway-domain.png';
+import Button from '../components/Button';
 
 const EmptyComponent = () => <></>;
 
@@ -84,7 +86,31 @@ export const BluethinkGOTemplate = ({
           objectFit="contain"
         />
       </CollapsibleWithImage>
-
+      <section id="domains" className="section has-dark-background">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-6">
+              <figure className="image">
+                <img src={norwayMap} alt="Kart over Norge" />
+              </figure>
+            </div>
+            <div className="column is-5 text">
+              <h3>BlueThink™ GO med skreddersydd domene for din lokalitet</h3>
+              <p className="medium-paragraph">
+                Vi har allerede kjøpt et skreddersydd domene til ditt anlegg og
+                over 1000 andre oppdrettsanlegg i Norge. Domenenavnet er dermed
+                enkelt å huske, slik at du kan logge deg inn når som helst, fra
+                hvor som helst.
+              </p>
+              <Button
+                className="is-transparent"
+                text="Se fullstendig domeneliste"
+                link="/bluethink-go/domener"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <SectionWith3Col
         className="has-dark-background"
         heading={featuredData.heading}

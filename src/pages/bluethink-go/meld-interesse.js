@@ -4,8 +4,6 @@ import Layout from '../../components/Layout';
 import Title from '../../components/Title';
 import Hero from '../../components/HeroBackgroundImage';
 import backgroundImage from '../../img/tablet-holding-portrait.jpg';
-import norwayMap from '../../img/norway-domain.png';
-import Button from '../../components/Button';
 
 // style={{ backgroundImage: `url(${backgroundImage})` }}
 export const OrderProduct = () => {
@@ -20,31 +18,7 @@ export const OrderProduct = () => {
           buttonPath="#meld-interesse"
           buttonText="Meld interesse"
         />
-        <section id="domains" className="section has-dark-background">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-6">
-                <figure className="image">
-                  <img src={norwayMap} alt="Kart over Norge" />
-                </figure>
-              </div>
-              <div className="column is-5 text">
-                <h3>BlueThink™ GO med skreddersydd domene for din lokalitet</h3>
-                <p className="medium-paragraph">
-                  Vi har allerede kjøpt et skreddersydd domene til ditt anlegg
-                  og over 1000 andre oppdrettsanlegg i Norge. Domenenavnet er
-                  dermed enkelt å huske, slik at du kan logge deg inn når som
-                  helst, fra hvor som helst.
-                </p>
-                <Button
-                  className="is-transparent"
-                  text="Se fullstendig domeneliste"
-                  link="/bluethink-go/domener"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+
         <section id="meld-interesse" className="section has-dark-background">
           <div className="container">
             <div className="columns">
