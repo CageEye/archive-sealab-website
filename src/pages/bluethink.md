@@ -7,7 +7,7 @@ subheading: Kontinuerlig overvåking er den beste beslutningsstøtten som finnes
 
 featuredData:
   featuredDataBoxes:
-    - description: Med merdkanten som arbeidsplass er man spesielt utsatt for sjø, vær og vind - og sikkerhet må derfor tas på alvor. BlueThinkTM Appen Weather gir deg sanntidsoversikt over værsituasjonen på ditt oppdrettsanlegg. 
+    - description: Med merdkanten som arbeidsplass er man spesielt utsatt for sjø, vær og vind - og sikkerhet må derfor tas på alvor. Weather gir deg sanntidsoversikt over værsituasjonen på ditt oppdrettsanlegg. 
       heading: Weather
       icon: /img/icon-weather.svg
       cta: /apper/weather
@@ -56,4 +56,4 @@ lightbox:
 
 ---
 
-BlueThinkTM Apps bidrar med relevant informasjon som gjør deg som oppdretter bedre rustet til å ta gode beslutninger på jobb, hver dag.
+BlueThink™ Apps bidrar med relevant informasjon som gjør deg som oppdretter bedre rustet til å ta gode beslutninger på jobb, hver dag.
