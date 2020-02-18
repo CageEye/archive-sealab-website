@@ -100,6 +100,7 @@ export const LivestreamPageTemplate = ({
           <video
             style={{ objectFit: 'cover' }}
             poster="img/bgimg.jpg"
+            width="70%"
             id="bgvid"
             playsInline
             autoPlay
