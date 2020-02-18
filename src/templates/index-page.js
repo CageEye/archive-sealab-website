@@ -32,7 +32,7 @@ export const IndexPageTemplate = ({
       Navbar={Navbar}
       callToActionLink="/kontakt"
       callToActionText="Kontakt oss"
-      secondaryCallToActionLink="/livestream"
+      secondaryCallToActionLink="/bluethink"
       secondaryCallToActionText="Les mer"
       backgroundVideoMP4={fishVideoMP4}
       backgroundVideoWebM={fishVideoWebM}
@@ -94,7 +94,7 @@ export const IndexPageTemplate = ({
               <Button
                 className="is-secondary"
                 text="Les mer"
-                link="/livestream"
+                link="/bluethink"
               />
             </div>
           </div>
