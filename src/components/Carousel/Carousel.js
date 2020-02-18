@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import AngleRight from '../../img/angle-right.inline.svg';
 import AngleLeft from '../../img/angle-left.inline.svg';
 import styles from './Carousel.module.scss';
+import NonStretchedImage from '../NonStretchedImage';
 
 export default ({ items }) => {
   const [activeItemIndex, setActiveItemIndex] = useState(0);
@@ -37,14 +38,11 @@ export default ({ items }) => {
       >
         {items.map(item => (
           <div className={classNames(styles.carouselItem)}>
-            <figure className="image">
-              <img
-                className={styles.carouselImage}
-                src={item.img}
-                alt={item.title}
-              />
-            </figure>
-            <h4 className={styles.title}>{item.title}</h4>
+            <NonStretchedImage
+              fluid={item.img.childImageSharp.fluid}
+              objectFit="contain"
+            />
+            <h4 className={styles.title}>{item.heading}</h4>
             <p className={styles.description}>{item.description}</p>
           </div>
         ))}

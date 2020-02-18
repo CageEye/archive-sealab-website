@@ -14,6 +14,7 @@
         .image {
             width: 70px;
             padding-bottom: 14px;
+            height: 100px;
         }
 
         .heading {
@@ -29,6 +30,10 @@
             font-weight: normal;
             letter-spacing: 0.5px;
             line-height: 170%;
+            min-height: 250px;
+        }
+        .button {
+            margin-top: 20px;
         }
     }
     @media only screen and (min-width: $tablet) {

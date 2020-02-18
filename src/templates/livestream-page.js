@@ -9,50 +9,21 @@ import Title from '../components/Title';
 import SEO from '../components/SEO';
 import RecentArticles from '../components/RecentArticles';
 import controlroomImage from '../img/sealab-controller-livestream.png';
-import iotImage from '../img/sealabProPackage.png';
-import tabletBTGOImage from '../img/tablet-holding-portrait.jpg';
+import SectionWith3Col from '../components/SectionWith3Col';
 
-import fishVideoMP4 from '../videos/fishVideo.mp4';
-import fishVideoWebM from '../videos/fishVideo.webm';
-
-import reliableIcon from '../img/reliable.svg';
-import installationIcon from '../img/easy-instalation.svg';
-import serviceWarrantyIcon from '../img/service-warranty.svg';
-import norwayIcon from '../img/norway-manufacture.svg';
-
-const featured = [
-  { title: 'Driftsikkert', icon: reliableIcon },
-  { title: 'Enkel installasjon', icon: installationIcon },
-  { title: 'Servicegaranti', icon: serviceWarrantyIcon },
-  { title: 'Utviklet, designet og produsert i Norge', icon: norwayIcon },
-];
-
-const carouselItems = [
-  {
-    img: iotImage,
-    title: 'Internet of Things',
-    description:
-      'Kamerasystemet integrerer undervannskamera, overflatekamera, lys, sensorikk, mekanikk og programvare som alle kommuniserer sammen.',
-  },
-  {
-    img: controlroomImage,
-    title: 'BlueThink™ Apps',
-    description:
-      'Fra BlueThink Kontrollrom har du tilgang til Livestream i tillegg til alle dine BlueThink™ Apps. ',
-  },
-  {
-    img: tabletBTGOImage,
-    title: 'BlueThink™ GO',
-    description:
-      'Med BlueThink™ GO kan du følge med på anlegget ditt når som helst, fra hvor som helst.',
-  },
-];
+// import fishVideoMP4 from '../videos/fishVideo.mp4';
+// import fishVideoWebM from '../videos/fishVideo.webm';
 
 export const LivestreamPageTemplate = ({
   title,
   content,
   contentComponent,
   heading,
+  subheading,
+  featuredData,
+  // videoDescription,
+  features,
+  lightbox,
 }) => {
   const PageContent = contentComponent || Content;
 
@@ -67,14 +38,7 @@ export const LivestreamPageTemplate = ({
           <div className="columns  reverse-row-order">
             <div className="column children-padding">
               <h1>{heading}</h1>
-              <p>
-                Kontinuerlig overvåking er den beste beslutningsstøtten som
-                finnes. Med vår unike kamerateknologi og software, som
-                kommuniserer sammen (IoT), får du høykvalitets overvåkingsbilder
-                rett inn i ditt BlueThink™ Kontrollrom. Et lynskarpt blikk på
-                det som foregår i merdene kan bidra til høyere forutsigbarhet,
-                lavere dødelighet og bedre fiskevelferd.
-              </p>
+              <p>{subheading}</p>
               <Button
                 text="Kontakt oss"
                 link="/kontakt"
@@ -82,12 +46,6 @@ export const LivestreamPageTemplate = ({
               />
             </div>
             <div className="column ">
-              {/* <div
-                id="livestream-hero-image"
-                style={{
-                  background: `linear-gradient(270deg, #0E111B 24.5%, rgba(14, 17, 27, 0) 46.92%), linear-gradient(0deg, #0E111B 0%, rgba(14, 17, 27, 0) 25%), url(${controlroomImage})`,
-                }}
-              /> */}
               <figure className="image">
                 <img src={controlroomImage} alt="Kontrollrom" />
               </figure>
@@ -95,7 +53,20 @@ export const LivestreamPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="video section has-dark-background">
+      <SectionWith3Col
+        className="has-dark-background"
+        heading={featuredData.heading}
+        columns={featuredData.featuredDataBoxes}
+      />
+      <section
+        id="btgo-page-content"
+        className="section has-dark-background is-medium free-text-centered"
+      >
+        <div className="container">
+          <PageContent content={content} />
+        </div>
+      </section>
+      {/* <section className="video section has-dark-background">
         <div className="video-background">
           <video
             style={{ objectFit: 'cover' }}
@@ -113,34 +84,29 @@ export const LivestreamPageTemplate = ({
         </div>
         <div className="container">
           <div className="content has-white-background">
-            <p>
-              Ved hjelp av våre unike LED-lys kan du følge med på laksen om
-              natten eller på større dybde. LED-lyset følger kameraet til alle
-              dybder.
-            </p>
+            <p>{videoDescription}</p>
           </div>
         </div>
-      </section>
+      </section> */}
       <section id="features" className="section has-dark-background">
         <div className="container">
           <div className="columns">
             <div className="column is-6">
               <Title
-                title="BlueThink™ Kontrollrom"
-                subtitle="Hardware og Software, Produsert i Norge"
-                description="Både hardware og software produseres i Norge. Slik får du en lynrask levering og driftsikker løsning. Produktene er utviklet slik at de behøver minimalt med vedlikehold og er enkle å installere. Ønsker du livestream fra ditt anlegg, kan vi sette opp et helhetlig system på få timer. Skulle du trenge hjelp, er service telefonen bemannet 24 timer i døgnet."
+                title={features.heading}
+                subtitle={features.subheading}
+                description={features.description}
                 position="left"
               />
-              <PageContent className="content" content={content} />
             </div>
           </div>
           <div id="features-icons" className="columns">
-            {featured.map(featuredElement => (
+            {features.featureItems.map(featuredElement => (
               <div className="features-icons-item column is-3">
                 <figure className="image">
-                  <img src={featuredElement.icon} alt="Icon" />
+                  <img src={featuredElement.icon.publicURL} alt="Icon" />
                 </figure>
-                <h4>{featuredElement.title}</h4>
+                <h4>{featuredElement.heading}</h4>
               </div>
             ))}
           </div>
@@ -149,11 +115,11 @@ export const LivestreamPageTemplate = ({
       <section id="solution-carousel" className="section has-dark-background">
         <div className="container">
           <Title
-            title="Livestream løsning"
-            description="BlueThink™ Kontrollrom baseres på interaksjon mellom en rekke produkter som kombinert gir førsteklasses overvåkning av ditt anlegget. "
+            title={lightbox.heading}
+            description={lightbox.description}
             position="center"
           />
-          <Carousel items={carouselItems} />
+          <Carousel items={lightbox.carouselItems} />
         </div>
       </section>
       <RecentArticles />
@@ -165,6 +131,7 @@ LivestreamPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
+  featuredData: PropTypes.object,
 };
 
 const LivestreamPage = ({ data }) => {
@@ -176,7 +143,12 @@ const LivestreamPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         heading={post.frontmatter.heading}
+        subheading={post.frontmatter.subheading}
         content={post.html}
+        featuredData={post.frontmatter.featuredData}
+        videoDescription={post.frontmatter.videoDescription}
+        features={post.frontmatter.features}
+        lightbox={post.frontmatter.lightbox}
       />
     </Layout>
   );
@@ -195,6 +167,48 @@ export const LivestreamPageQuery = graphql`
       frontmatter {
         title
         heading
+        subheading
+        featuredData {
+          heading
+          featuredDataBoxes {
+            icon {
+              extension
+              publicURL
+            }
+            heading
+            description
+            cta
+          }
+        }
+        videoDescription
+        features {
+          heading
+          subheading
+          description
+          featureItems {
+            heading
+            icon {
+              extension
+              publicURL
+            }
+          }
+        }
+        lightbox {
+          heading
+          description
+          carouselItems {
+            heading
+            description
+            img {
+              childImageSharp {
+                fluid(maxHeight: 1180) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  presentationWidth
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
