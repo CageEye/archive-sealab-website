@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './SectionWith3Col.module.scss';
+import Button from '../Button';
 
 const SectionWith3Col = ({ heading, columns, className }) => {
   if (!heading || !columns || columns.length < 1) return <></>;
@@ -14,6 +15,7 @@ const SectionWith3Col = ({ heading, columns, className }) => {
               icon={column.icon.publicURL}
               heading={column.heading}
               description={column.description}
+              cta={column.cta}
             />
           ))}
         </div>
@@ -22,13 +24,22 @@ const SectionWith3Col = ({ heading, columns, className }) => {
   );
 };
 
-const IconBox = ({ icon, heading, description }) => (
+const IconBox = ({ icon, heading, description, cta }) => (
   <div className={classNames('box', styles.box)}>
     <figure className="image">
       <img className={styles.image} src={icon} alt={`Icon for ${heading}`} />
     </figure>
     <h3 className={styles.heading}>{heading}</h3>
     <p className={styles.description}>{description}</p>
+    {cta ? (
+      <Button
+        className={classNames('is-secondary', styles.button)}
+        text="Les mer"
+        link={cta}
+      />
+    ) : (
+      <></>
+    )}
   </div>
 );
 
