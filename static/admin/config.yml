@@ -106,7 +106,53 @@ collections:
       - {label: "Fritekst", name: "body", widget: "markdown", }
       - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
-      
+
+  - name: "hardware"
+    label: "Hardware sider"
+    folder: "src/pages/hardware"
+    create: true
+    description: "Hardware sider med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "hardware-page"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "hardware-page"}
+      - {label: "Tittel", name: "title", widget: "string" }
+      - label: "Bildekarusell"
+        name: featuredimages
+        widget: object
+        fields:
+          - label: "Bilder"
+            name: boxes
+            widget: list
+            fields:
+              - {label: "Alt tekst", name: alt, widget: string, hint: "ALLE bilder må ha en tekst som beskriver hva bildet viser. Dette er krav for alt som ligger på nettet (søk WCAG på nett)"}
+              - {label: "Bilde", name: img, widget: image}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Kort beskrivelse", name: "shortDescription", widget: "text"}
+      - label: "Fremhevet spesifikasjoner"
+        name: "highlightSpecifications"
+        widget: "object"
+        fields:
+          - {label: "Verdi", name: "value", widget: "string"}
+          - {label: "Beskrivelse", name: "description", widget: "string"}
+      - label: "Spesifikasjoner - resten"
+        name: allSpecifications
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Beskrivelse", name: description, widget: text}
+      - label: "Bilde og tekst - side om side"
+        name: textAndImages
+        hint: "Vises annenhver høyrestilt og venstrestilt bilde"
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Beskrivelse", name: description, widget: text}
+          - {label: "Bilde", name: img, widget: image}
+      - {label: "Fritekst midtstilt", name: "body", widget: "markdown", }
+      - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
+  
+
   - name: "simple-pages"
     label: "Rene tekst sider"
     folder: "src/pages/"
