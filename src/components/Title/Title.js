@@ -11,7 +11,7 @@ const Title = ({ title, subtitle, description, position }) => {
       })}
     >
       {subtitle ? <h3 className={styles.subtitle}>{subtitle}</h3> : <></>}
-      <h1 className={styles.title}>{title}</h1>
+      <h2 className={styles.title}>{title}</h2>
       {description ? (
         <p className={styles.description}>{description}</p>
       ) : (

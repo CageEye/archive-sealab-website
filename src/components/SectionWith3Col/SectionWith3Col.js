@@ -33,7 +33,7 @@ const IconBox = ({ icon, heading, description, cta }) => (
     <p className={styles.description}>{description}</p>
     {cta ? (
       <Button
-        className={classNames('is-secondary', styles.button)}
+        className={classNames('is-transparent', styles.button)}
         text="Les mer"
         link={cta}
       />
