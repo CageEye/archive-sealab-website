@@ -60,7 +60,7 @@ export const LivestreamPageTemplate = ({
       />
       <section
         id="btgo-page-content"
-        className="section has-dark-background is-medium free-text-centered"
+        className="section has-dark-background free-text-centered"
       >
         <div className="container">
           <PageContent content={content} />
