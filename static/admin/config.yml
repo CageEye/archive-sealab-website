@@ -118,19 +118,15 @@ collections:
       - {label: "Tittel", name: "title", widget: "string" }
       - label: "Bildekarusell"
         name: featuredimages
-        widget: object
+        widget: list
         fields:
-          - label: "Bilder"
-            name: boxes
-            widget: list
-            fields:
-              - {label: "Alt tekst", name: alt, widget: string, hint: "ALLE bilder må ha en tekst som beskriver hva bildet viser. Dette er krav for alt som ligger på nettet (søk WCAG på nett)"}
-              - {label: "Bilde", name: img, widget: image}
+          - {label: "Alt tekst", name: alt, widget: string, hint: "ALLE bilder må ha en tekst som beskriver hva bildet viser. Dette er krav for alt som ligger på nettet (søk WCAG på nett)"}
+          - {label: "Bilde", name: img, widget: image}
       - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
       - {label: "Kort beskrivelse", name: "shortDescription", widget: "text"}
       - label: "Fremhevet spesifikasjoner"
         name: "highlightSpecifications"
-        widget: "object"
+        widget: "list"
         fields:
           - {label: "Verdi", name: "value", widget: "string"}
           - {label: "Beskrivelse", name: "description", widget: "string"}
