@@ -8,8 +8,29 @@ import 'moment/locale/nb';
 import NonStretchedImage from '../NonStretchedImage';
 import { idMaker } from '../../utils/id-maker';
 
+const gen = idMaker();
+
+const imageResolver = image => {
+  if (image && image.childImageSharp) return image.childImageSharp.fluid;
+  // if (image && image.mobile && image.desktop) {
+  //   const sources = [
+  //     {
+  //       ...image.mobile.fluid,
+  //       media: `(max-width: 768px)`,
+  //     },
+  //     {
+  //       ...image.desktop.fluid,
+  //       media: `(min-width: 768px)`,
+  //     },
+  //   ];
+  //   console.log(sources);
+
+  //   return sources;
+  // }
+  return undefined;
+};
+
 const Slideshow = ({ content }) => {
-  const gen = idMaker();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
@@ -24,17 +45,24 @@ const Slideshow = ({ content }) => {
         previousButton={<ArrowIcon />}
         nextButton={<ArrowIcon isRight />}
         onSlideChange={event => setCurrentIndex(event.slideIndex)}
+        touchDisabled
+        autoplay={30000}
+        infinite
       >
-        {content.map(imageOject => (
-          <div key={gen.next().value}>
-            <NonStretchedImage
-              fluid={imageOject.img.childImageSharp.fluid}
-              objectFit="contain"
-              alt={imageOject.alt}
-              className={styles.image}
-            />
-          </div>
-        ))}
+        {content.map(imageOject => {
+          const image = imageResolver(imageOject.img);
+          if (!image) return <></>;
+          return (
+            <div key={gen.next().value}>
+              <NonStretchedImage
+                fluid={image}
+                objectFit="contain"
+                alt={imageOject.alt}
+                className={styles.image}
+              />
+            </div>
+          );
+        })}
       </Slider>
 
       <Reddots currentIndex={currentIndex} numberOfItems={content.length} />
@@ -51,6 +79,7 @@ const Reddots = ({ currentIndex, numberOfItems }) => {
     <div className={styles.dotNavigation}>
       {arr.map(index => (
         <svg
+          key={gen.next().value}
           className={styles.dot}
           width="6"
           height="6"

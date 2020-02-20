@@ -127,7 +127,7 @@ export const HardwarePageQuery = graphql`
           alt
           img {
             childImageSharp {
-              fluid(maxHeight: 790) {
+              fluid(maxHeight: 300) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
