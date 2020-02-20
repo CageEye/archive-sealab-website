@@ -12,21 +12,6 @@ const gen = idMaker();
 
 const imageResolver = image => {
   if (image && image.childImageSharp) return image.childImageSharp.fluid;
-  // if (image && image.mobile && image.desktop) {
-  //   const sources = [
-  //     {
-  //       ...image.mobile.fluid,
-  //       media: `(max-width: 768px)`,
-  //     },
-  //     {
-  //       ...image.desktop.fluid,
-  //       media: `(min-width: 768px)`,
-  //     },
-  //   ];
-  //   console.log(sources);
-
-  //   return sources;
-  // }
   return undefined;
 };
 
@@ -46,7 +31,7 @@ const Slideshow = ({ content }) => {
         nextButton={<ArrowIcon isRight />}
         onSlideChange={event => setCurrentIndex(event.slideIndex)}
         touchDisabled
-        autoplay={30000}
+        autoplay={10000}
         infinite
       >
         {content.map(imageOject => {

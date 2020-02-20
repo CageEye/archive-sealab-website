@@ -29,9 +29,13 @@
     }
   }
   @media only screen and (min-width: $desktop) {
-    height: 70vh;
+    height: 50vh;
     .image {
       margin-top: 8vh !important;
+    }
+    .previous,
+    .next {
+      top: 35vh !important;
     }
   }
 }
