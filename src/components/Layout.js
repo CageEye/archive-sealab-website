@@ -6,14 +6,13 @@ import Navbar from './Navbar';
 import './all.scss';
 import useSiteMetadata from './SiteMetadata';
 
-const TemplateWrapper = ({ children, articles }) => {
+const TemplateWrapper = ({ children, articles, seoTitle, seoDescription }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
       <Helmet>
         <html lang="no" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{seoTitle || title}</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -39,9 +38,13 @@ const TemplateWrapper = ({ children, articles }) => {
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta name="description" content={seoDescription || description} />
+        <meta property="og:url" content="https://sealab.no" />
+        <meta property="og:title" content={seoTitle || title} />
+        <meta
+          property="og:description"
+          content={seoDescription || description}
+        />
         <meta
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
