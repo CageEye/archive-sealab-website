@@ -235,6 +235,11 @@ body {
   h1, h2, h3, p, li {color: $white;}
 }
 
+.section.has-light-dark-background {
+  color: $white;
+  background-color: $background-color-light-dark;
+}
+
 /****************     NAVIGATION    ********************/
 
 nav.navbar {

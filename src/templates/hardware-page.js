@@ -19,7 +19,7 @@ export const HardwarePageTemplate = ({
   const PostContent = contentComponent || Content;
   return (
     <>
-      <section className="section has-dark-background">
+      <section className="section has-light-dark-background">
         <div className="container">
           <Slideshow content={featuredimages} />
         </div>

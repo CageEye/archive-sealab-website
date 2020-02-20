@@ -7,9 +7,11 @@ $red: #E32938;
 $dark: #0E111B;
 $dark-light: #1B1F34;
 $midnight-dark: $dark;
+$midnight-dark-light:#191C27;
 
 //BACKGROUND COLORS
 $background-color-dark: $midnight-dark;
+$background-color-light-dark: $midnight-dark-light;
 $body-dark: #3E4045;
 $secondary-background: #191C27;
 $border-light-background: #333333;
@@ -17,7 +19,7 @@ $border-dark-background: rgba(255, 255, 255, 0.15);;
 $error: #ED1313;
 $success: #32B576;
 $warning: #F5D37C;
-$footer-background: #191C27;
+$footer-background: $midnight-dark-light;
 
 //TEXT COLORS
 $text-grey-light: $grey-light;
