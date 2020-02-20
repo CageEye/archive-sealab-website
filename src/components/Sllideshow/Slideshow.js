@@ -17,6 +17,7 @@ const Slideshow = ({ content }) => {
         slider: classNames(styles.slider, 'slider'),
         previousButton: classNames(styles.previous, 'previousButton'),
         nextButton: classNames(styles.next, 'nextButton'),
+        buttonDisabled: classNames(styles.disabled, 'disabled'),
       }}
       previousButton={<ArrowIcon />}
       nextButton={<ArrowIcon isRight />}
@@ -63,13 +64,13 @@ const ArrowIcon = ({ isRight = false }) => {
             <circle id="Oval" cx="23" cy="23" r="23" />
           </g>
           <g
-            id="Vector-13"
+            id={styles.arrow}
             transform={
               isRight
                 ? 'translate(20.000000, 17.000000)'
                 : 'translate(23.000000, 23.000000) scale(-1, 1) translate(-23.000000, -23.000000) translate(20.000000, 17.000000)'
             }
-            stroke="#0E111B"
+            stroke="white"
           >
             <polyline id="Path" points="0 0.5 5.5 6 0 11.5" />
           </g>

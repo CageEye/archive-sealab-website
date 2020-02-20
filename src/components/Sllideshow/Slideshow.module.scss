@@ -11,11 +11,14 @@
   }
   .previous, .next {
     transition: $transition;
-    &:hover, 
-    &:focus {
+    &:not(.disabled):hover, 
+    &:not(.disabled):focus {
       .arrowIcon {
         #background {
           fill-opacity: 1;
+        }
+        #arrow {
+          stroke: #464951
         }
       }
     }
