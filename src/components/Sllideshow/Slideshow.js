@@ -7,32 +7,66 @@ import styles from './Slideshow.module.scss';
 import 'moment/locale/nb';
 import NonStretchedImage from '../NonStretchedImage';
 import { idMaker } from '../../utils/id-maker';
+import { number } from 'prop-types';
 
 const Slideshow = ({ content }) => {
   const gen = idMaker();
 
   return (
-    <Slider
-      classNames={{
-        slider: classNames(styles.slider, 'slider'),
-        previousButton: classNames(styles.previous, 'previousButton'),
-        nextButton: classNames(styles.next, 'nextButton'),
-        buttonDisabled: classNames(styles.disabled, 'disabled'),
-      }}
-      previousButton={<ArrowIcon />}
-      nextButton={<ArrowIcon isRight />}
-    >
-      {content.map(imageOject => (
-        <div key={gen.next().value}>
-          <NonStretchedImage
-            fluid={imageOject.img.childImageSharp.fluid}
-            objectFit="contain"
-            alt={imageOject.alt}
-            className={styles.image}
+    <>
+      <Slider
+        classNames={{
+          slider: classNames(styles.slider, 'slider'),
+          previousButton: classNames(styles.previous, 'previousButton'),
+          nextButton: classNames(styles.next, 'nextButton'),
+          buttonDisabled: classNames(styles.disabled, 'disabled'),
+        }}
+        previousButton={<ArrowIcon />}
+        nextButton={<ArrowIcon isRight />}
+      >
+        {content.map(imageOject => (
+          <div key={gen.next().value}>
+            <NonStretchedImage
+              fluid={imageOject.img.childImageSharp.fluid}
+              objectFit="contain"
+              alt={imageOject.alt}
+              className={styles.image}
+            />
+          </div>
+        ))}
+      </Slider>
+
+      <Reddots currentIndex={1} numberOfItems={content.length} />
+    </>
+  );
+};
+
+const Reddots = ({ currentIndex, numberOfItems }) => {
+  const arr = [];
+  for (let index = 0; index < numberOfItems; index += 1) {
+    arr.push(index);
+  }
+  return (
+    <div className={styles.dotNavigation}>
+      {arr.map(index => (
+        <svg
+          className={styles.dot}
+          width="6"
+          height="6"
+          viewBox="0 0 6 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="3"
+            cy="3"
+            r="3"
+            fill={currentIndex === index ? '#E32938' : 'white'}
+            fillOpacity={currentIndex === index ? '1' : '0.3'}
           />
-        </div>
+        </svg>
       ))}
-    </Slider>
+    </div>
   );
 };
 
