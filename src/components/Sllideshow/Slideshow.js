@@ -18,6 +18,19 @@ const imageResolver = image => {
 const Slideshow = ({ content }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  if (content.length === 1) {
+    const imageOject = content[0];
+    const image = imageResolver(imageOject.img);
+    return (
+      <NonStretchedImage
+        fluid={image}
+        objectFit="contain"
+        alt={imageOject.alt}
+        className={styles.image}
+      />
+    );
+  }
+
   return (
     <>
       <Slider

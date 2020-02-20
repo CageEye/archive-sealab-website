@@ -16,6 +16,12 @@
   .next {
     transition: $transition;
     top: 60vh !important;
+    #background {
+      fill-opacity: 0.2;
+    }
+    #arrow {
+      stroke: white;
+    }
     &:not(.disabled):hover,
     &:not(.disabled):focus {
       .arrowIcon {

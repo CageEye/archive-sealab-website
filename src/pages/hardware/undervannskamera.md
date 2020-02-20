@@ -4,7 +4,11 @@ title: Undervannskamera til lakseoppdrett. Produsert i Norge av SEALAB
 featuredimages: 
   - alt: Produktbilde beskrivelse
     img: /img/PT_Cam_Frilagt.png
-  - alt: Produktbilde beskrivelse 222
+  - alt: Produktbilde beskrivelse
+    img: /img/PT_Cam_Frilagt.png
+  - alt: Produktbilde beskrivelse
+    img: /img/PT_Cam_Frilagt.png
+  - alt: Produktbilde beskrivelse
     img: /img/PT_Cam_Frilagt.png
 heading: Undervannskamera
 shortDescription: >-
