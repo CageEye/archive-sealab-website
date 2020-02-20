@@ -1,70 +1,117 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import Slideshow from '../components/Sllideshow';
+import Button from '../components/Button';
+import Content, { HTMLContent } from '../components/Content';
 
-export const HardwarePageTemplate = ({ title, heading, description }) => (
-  <div className="content">
-    <div className="full-width-image-container margin-top-0">
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
+export const HardwarePageTemplate = ({
+  featuredimages,
+  heading,
+  shortDescription,
+  highlightSpecifications,
+  allSpecifications,
+  // textAndImages,
+  contentComponent,
+  content,
+}) => {
+  const PostContent = contentComponent || Content;
+  return (
+    <>
+      <section className="section has-dark-background">
+        <div className="container">
+          <Slideshow content={featuredimages} />
+        </div>
+      </section>
+      <section
+        className="section  has-dark-background"
+        id="product-description"
       >
-        {title}
-      </h2>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
+        <div className="container">
           <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+            <div className="column is-half">
+              <h2>{heading}</h2>
+            </div>
+            <div className="column is-half">
+              <p>
+                <strong>Beskrivelse</strong>
+              </p>
+              <p>{shortDescription}</p>
+              <Button
+                text="Les mer"
+                className={classNames('is-link')}
+                link="#product-specifications"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-);
-
-HardwarePageTemplate.propTypes = {
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
+      </section>
+      <section
+        className="section has-dark-background"
+        id="highlighted-specifications"
+      >
+        <div className="container">
+          <p>
+            <strong>Spesifikasjoner</strong>
+          </p>
+          {highlightSpecifications.map(spec => (
+            <>
+              <p>{spec.value}</p>
+              <p>{spec.description}</p>
+            </>
+          ))}
+        </div>
+      </section>
+      <section className="section has-dark-background" id="all-specifications">
+        <div className="container">
+          {allSpecifications.map(spec => (
+            <>
+              <p>
+                {spec.heading}: {spec.description}
+              </p>
+            </>
+          ))}
+        </div>
+      </section>
+      <section className="section has-dark-background free-text-centered">
+        <div className="container">
+          <PostContent content={content} />
+        </div>
+      </section>
+    </>
+  );
 };
 
 const HardwarePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  if (!frontmatter) return <></>;
+  const {
+    title,
+    featuredimages,
+    heading,
+    shortDescription,
+    seoDescription,
+    highlightSpecifications,
+    allSpecifications,
+    textAndImages,
+  } = frontmatter;
 
   return (
-    <Layout>
+    <Layout seoDescription={seoDescription} seoTitle={title}>
       <HardwarePageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
+        content={data.markdownRemark.html}
+        contentComponent={HTMLContent}
+        featuredimages={featuredimages}
+        heading={heading}
+        shortDescription={shortDescription}
+        seoDescription={seoDescription}
+        highlightSpecifications={highlightSpecifications}
+        allSpecifications={allSpecifications}
+        textAndImages={textAndImages}
       />
     </Layout>
   );
-};
-
-HardwarePage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 };
 
 export default HardwarePage;
@@ -72,17 +119,44 @@ export default HardwarePage;
 export const HardwarePageQuery = graphql`
   query HardwarePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      id
+      html
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+        featuredimages {
+          alt
+          img {
+            childImageSharp {
+              fluid(maxHeight: 790) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
             }
           }
         }
         heading
-        description
+        shortDescription
+        seoDescription
+        highlightSpecifications {
+          value
+          description
+        }
+        allSpecifications {
+          heading
+          description
+        }
+        textAndImages {
+          heading
+          description
+          img {
+            childImageSharp {
+              fluid(maxHeight: 790) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
       }
     }
   }
