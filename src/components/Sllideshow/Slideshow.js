@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
@@ -7,10 +7,10 @@ import styles from './Slideshow.module.scss';
 import 'moment/locale/nb';
 import NonStretchedImage from '../NonStretchedImage';
 import { idMaker } from '../../utils/id-maker';
-import { number } from 'prop-types';
 
 const Slideshow = ({ content }) => {
   const gen = idMaker();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
@@ -23,6 +23,7 @@ const Slideshow = ({ content }) => {
         }}
         previousButton={<ArrowIcon />}
         nextButton={<ArrowIcon isRight />}
+        onSlideChange={event => setCurrentIndex(event.slideIndex)}
       >
         {content.map(imageOject => (
           <div key={gen.next().value}>
@@ -36,7 +37,7 @@ const Slideshow = ({ content }) => {
         ))}
       </Slider>
 
-      <Reddots currentIndex={1} numberOfItems={content.length} />
+      <Reddots currentIndex={currentIndex} numberOfItems={content.length} />
     </>
   );
 };
