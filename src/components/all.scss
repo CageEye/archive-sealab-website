@@ -992,16 +992,28 @@ section.video {
       font-weight: bold;
     }
   }
-  @media screen and (max-width: $tablet) {
-    padding: 0;
-  }
-  @media screen and (min-width: $tablet) {
-    .video-background video {
+  // @media screen and (max-width: $tablet) {
+  //   padding: 0;
+  // }
+  // @media screen and (min-width: $tablet) {
+    .video-background {
       margin: auto;
       position: relative;
       display: block;
     }
-  }
+    .video-iframe {
+      width: 85vw;
+      height: 48vw;
+      margin-left: 5vw;
+    }
+  // }
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
   @media screen and (min-width: $desktop) {
     .content.has-white-background {
       max-width: 400px;

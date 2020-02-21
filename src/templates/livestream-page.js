@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import YouTube from 'react-youtube';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Content, { HTMLContent } from '../components/Content';
@@ -11,9 +12,6 @@ import RecentArticles from '../components/RecentArticles';
 import controlroomImage from '../img/sealab-controller-livestream.png';
 import SectionWith3Col from '../components/SectionWith3Col';
 
-// import fishVideoMP4 from '../videos/fishVideo.mp4';
-// import fishVideoWebM from '../videos/fishVideo.webm';
-
 export const LivestreamPageTemplate = ({
   title,
   content,
@@ -21,12 +19,22 @@ export const LivestreamPageTemplate = ({
   heading,
   subheading,
   featuredData,
-  // videoDescription,
+  videoDescription,
   features,
   lightbox,
 }) => {
   const PageContent = contentComponent || Content;
-
+  const videoOptions = {
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+      controls: 0,
+      rel: 0,
+      showinfo: 0,
+      enablejsapi: 1,
+      loop: 1,
+    },
+  };
   return (
     <>
       <SEO title={title} />
@@ -66,28 +74,20 @@ export const LivestreamPageTemplate = ({
           <PageContent content={content} />
         </div>
       </section>
-      {/* <section className="video section has-dark-background">
+      <section className="video section has-dark-background">
         <div className="video-background">
-          <video
-            style={{ objectFit: 'cover' }}
-            poster="img/bgimg.jpg"
-            width="70%"
-            id="bgvid"
-            playsInline
-            autoPlay
-            muted
-            loop
-          >
-            <source src={fishVideoWebM} type="video/webm" />
-            <source src={fishVideoMP4} type="video/mp4" />
-          </video>
+          <YouTube
+            videoId="aQXJZfxR6kY"
+            opts={videoOptions}
+            className="video-iframe"
+          />
         </div>
         <div className="container">
           <div className="content has-white-background">
             <p>{videoDescription}</p>
           </div>
         </div>
-      </section> */}
+      </section>
       <section id="features" className="section has-dark-background">
         <div className="container">
           <div className="columns">
