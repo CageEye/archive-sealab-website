@@ -48,7 +48,7 @@ export const HardwarePageTemplate = ({
         all={allSpecifications}
       />
 
-      <section className="section has-dark-background free-text-centered">
+      <section className="section has-dark-background is-medium free-text-centered">
         <div className="container">
           <PostContent content={content} />
         </div>
