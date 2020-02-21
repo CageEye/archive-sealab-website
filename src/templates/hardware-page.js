@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Slideshow from '../components/Sllideshow';
 import Button from '../components/Button';
+import Specifications from '../components/Specifications';
 import Content, { HTMLContent } from '../components/Content';
 
 export const HardwarePageTemplate = ({
@@ -25,55 +26,28 @@ export const HardwarePageTemplate = ({
         </div>
       </section>
       <section
-        className="section  has-dark-background"
+        className="section is-medium  has-dark-background"
         id="product-description"
       >
-        <div className="container">
+        <div className="container description">
           <div className="columns">
             <div className="column is-half">
-              <h2>{heading}</h2>
+              <h2 className="description--title">{heading}</h2>
             </div>
             <div className="column is-half">
-              <p>
+              <p className="description--subtitle">
                 <strong>Beskrivelse</strong>
               </p>
-              <p>{shortDescription}</p>
-              <Button
-                text="Les mer"
-                className={classNames('is-link')}
-                link="#product-specifications"
-              />
+              <p className="description--text">{shortDescription}</p>
             </div>
           </div>
         </div>
       </section>
-      <section
-        className="section has-dark-background"
-        id="highlighted-specifications"
-      >
-        <div className="container">
-          <p>
-            <strong>Spesifikasjoner</strong>
-          </p>
-          {highlightSpecifications.map(spec => (
-            <>
-              <p>{spec.value}</p>
-              <p>{spec.description}</p>
-            </>
-          ))}
-        </div>
-      </section>
-      <section className="section has-dark-background" id="all-specifications">
-        <div className="container">
-          {allSpecifications.map(spec => (
-            <>
-              <p>
-                {spec.heading}: {spec.description}
-              </p>
-            </>
-          ))}
-        </div>
-      </section>
+      <Specifications
+        highlighted={highlightSpecifications}
+        all={allSpecifications}
+      />
+
       <section className="section has-dark-background free-text-centered">
         <div className="container">
           <PostContent content={content} />
@@ -138,7 +112,7 @@ export const HardwarePageQuery = graphql`
         shortDescription
         seoDescription
         highlightSpecifications {
-          value
+          heading
           description
         }
         allSpecifications {

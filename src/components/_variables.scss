@@ -168,7 +168,13 @@ color: $text-grey-light;
   transition: $transition;
 }
 
-
+@mixin text_Uppercase_light {
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $text-grey-light;
+}
 
 
 

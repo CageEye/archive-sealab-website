@@ -232,12 +232,13 @@ body {
 
 .section.has-dark-background {
   color: $white;
-  h1, h2, h3, p, li {color: $white;}
+  h1, h2, h3, p, li, strong {color: $white;}
 }
 
 .section.has-light-dark-background {
   color: $white;
   background-color: $background-color-light-dark;
+  strong, h1, h2, h3, li, p, p strong {color: inherit !important}
 }
 
 /****************     NAVIGATION    ********************/
@@ -1183,3 +1184,26 @@ section#btgo-features {
     margin-bottom: auto;
   }
 }
+
+
+.description--subtitle {
+  padding-bottom: 20px;
+}
+.description--text {
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.5px;
+  color: $text-grey-light !important;
+  max-width: 570px;
+}
+section#product-description {
+
+  @media only screen and(min-width: $desktop) {
+    .description--title {
+      margin-top: -46px;
+    }
+  }
+
+}
+
+

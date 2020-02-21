@@ -21,18 +21,28 @@ seoDescription: >-
   mekanikk og programvare som kommuniserer sammen (IoT).
 
 highlightSpecifications:
-  - value: 40,000 lumens
+  - heading: 40,000 lumens
     description: Maximum power
-  - value: 0-100%
+  - heading: 0-100%
     description: Dimmable range
-  - value: 50,000 hours
+  - heading: 50,000 hours
     description: Life span
-  - value: 50,000 hours
+  - heading: 50,000 hours
     description: Life span
 
 allSpecifications:
   - heading: Network speed
     description: 1 Gbps (full duplex)
+  - heading: Fiber Input
+    description: MPO24 (single mode)
+  - heading: Camera Umbilical Plug
+  - heading: Camera Umbilical Plug
+    description: MPO24 (single mode)
+  - heading: Fiber Input
+    description: MPO24 (single mode)
+  - heading: Camera Umbilical Plug
+  - heading: Camera Umbilical Plug
+    description: MPO24 (single mode)
   - heading: Fiber Input
     description: MPO24 (single mode)
   - heading: Camera Umbilical Plug
