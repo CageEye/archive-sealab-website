@@ -128,14 +128,14 @@ collections:
         name: "highlightSpecifications"
         widget: "list"
         fields:
-          - {label: "Verdi", name: "value", widget: "string"}
+          - {label: "Verdi", name: "heading", widget: "string"}
           - {label: "Beskrivelse", name: "description", widget: "string"}
       - label: "Spesifikasjoner - resten"
         name: allSpecifications
         widget: list
         fields:
           - {label: "Tittel", name: heading, widget: string}
-          - {label: "Beskrivelse", name: description, widget: text}
+          - {label: "Beskrivelse", name: description, widget: text, required: false, hint: "Hvis denne er tom, legges det inn en checkmark"}
       - label: "Bilde og tekst - side om side"
         name: textAndImages
         hint: "Vises annenhver høyrestilt og venstrestilt bilde"
