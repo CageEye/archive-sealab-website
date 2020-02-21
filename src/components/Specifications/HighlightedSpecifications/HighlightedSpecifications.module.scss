@@ -31,7 +31,7 @@ section#highlighted {
   @media only screen and(min-width: $tablet) {
     grid-template-columns: repeat(4, 1fr);  
     .highlighted__specification {
-      padding: 35px 0;
+      padding: 44px 0;
       border-right: 1px solid $border-dark-background;
       &:first-of-type {
         border-left: 1px solid $border-dark-background;

@@ -1197,13 +1197,18 @@ section#btgo-features {
   max-width: 570px;
 }
 section#product-description {
-
   @media only screen and(min-width: $desktop) {
     .description--title {
       margin-top: -46px;
     }
   }
+}
 
+section#hardware-citation {
+  p {
+    @include text_Light;
+    font-size: 24px;
+  }
 }
 
 
