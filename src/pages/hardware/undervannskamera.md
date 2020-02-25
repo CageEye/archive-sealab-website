@@ -17,10 +17,10 @@ shortDescription: >-
 highlightSpecifications:
   - description: Oppløsning
     heading: Full HD 1080p
-  - description: Optisk zoom
-    heading: 30x
   - description: Synsvinkel
     heading: ' 63.7° '
+  - description: Vekt
+    heading: '10,35 Kg'
   - description: Vekt i vann
     heading: '1,16 kg'
 allSpecifications:
@@ -34,16 +34,14 @@ allSpecifications:
     heading: IMU og kompass
   - description: Ja
     heading: Fargevideo
-  - description: '10,35 Kg'
-    heading: Vekt
-  - description: 'F/1,6'
-    heading: Blenderåpning
   - description: POM/Rustfritt stål
     heading: Materiale
-  - description: 130 db
-    heading: WDR
+  - description: 'F/1,6'
+    heading: Blenderåpning
   - description: '28 cm x 11 / 22,5 cm'
     heading: Dimensjoner (D x H)
+  - description: 130 db
+    heading: WDR
   - description: '69'
     heading: IP
 textAndImages:
