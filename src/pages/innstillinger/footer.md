@@ -28,7 +28,7 @@ softwareNavigation:
 hardwareNavigation:
   - path: /sealab-connect
     title: SEALAB Connect
-  - path: /undervannskamera
+  - path: /hardware/undervannskamera
     title: Undervannskamera
   - path: /undervannslys
     title: Undervannslys
