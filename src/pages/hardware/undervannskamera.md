@@ -8,12 +8,12 @@ heading: Undervannskamera
 shortDescription: >-
   SEALAB PT-Cam leverer sylskarpe bilder for overvåkning og analyse i
   havbruksnæringen. Undervannskameraet kan vinkles i alle retninger og SEALAB
-  Smart Winch lar deg manøvrere det både fram, tilbake, opp og ned i hele
+  Smart Winch lar deg manøvrere det både fram, tilbake og opp og ned i hele
   merdens dybde. At kameraet også filmer i full HD, har autofokus og autojustert
   fargebalanse gjør 
 
-  det egnet til å bistå oppdretter i daglige rutiner som fôring og
-  tilstandsovervåkning av fisken. 
+  det perfekt egnet til å bistå oppdretter i daglige rutiner som fôring og
+  tilstandsovervåkning av fisken.
 highlightSpecifications:
   - description: Oppløsning
     heading: Full HD 1080p
