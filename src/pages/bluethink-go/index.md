@@ -3,7 +3,7 @@ templateKey: bluethink-go-page
 title: BlueThink™ GO
 heading: BlueThink™ GO
 subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!'
-featuredimage: /img/allInOne.png
+featuredimage: /img/allInOne-gradient-bg.png.jpg
 furtherInformationData:
   cta:
     text: Se demo - SEALAB Ocean Space Center
@@ -55,7 +55,7 @@ responsiveDesignSection:
     stua, mobilen på vei til jobb eller hvor du måtte befinne deg.
     Brukerautentisering sikrer at informasjonen på siden din forblir privat.
   heading: 'Tilgjengelig på alle enheter, takket være et moderne og responsivt design'
-  featuredimage: /img/desktop-and-mobile-blethink-go.png
+  featuredimage: /img/mobile-desktop.png
 expandableBoxes:
   boxes:
     - description: >-
@@ -78,7 +78,7 @@ expandableBoxes:
         Se og bli sett av fartøy i ditt område, samtidig som du automatisk
         logger faste anløp av kjente fartøy.
       heading: AIS
-  featuredimage: /img/tablet-holding-landscape-80.jpg
+  featuredimage: /img/tablet-holding-landscape-80-2.jpg
 featuredData:
   featuredDataBoxes:
     - description: Sjekk om fôrflåta gynger så mye at det er ubehagelig å jobbe derfra.
