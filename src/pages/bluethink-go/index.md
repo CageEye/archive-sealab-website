@@ -78,7 +78,7 @@ expandableBoxes:
         Se og bli sett av fartøy i ditt område, samtidig som du automatisk
         logger faste anløp av kjente fartøy.
       heading: AIS
-  featuredimage: /img/tablet-holding-landscape-80.jpg
+  featuredimage: /img/tablet-holding-landscape-80-2.jpg
 featuredData:
   featuredDataBoxes:
     - description: Sjekk om fôrflåta gynger så mye at det er ubehagelig å jobbe derfra.
