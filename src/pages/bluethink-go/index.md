@@ -55,7 +55,7 @@ responsiveDesignSection:
     stua, mobilen på vei til jobb eller hvor du måtte befinne deg.
     Brukerautentisering sikrer at informasjonen på siden din forblir privat.
   heading: 'Tilgjengelig på alle enheter, takket være et moderne og responsivt design'
-  featuredimage: /img/desktop-and-mobile-blethink-go.png
+  featuredimage: /img/mobile-desktop.png
 expandableBoxes:
   boxes:
     - description: >-
