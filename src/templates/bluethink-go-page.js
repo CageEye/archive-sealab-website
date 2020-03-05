@@ -211,7 +211,7 @@ export const BluethinkGOPageQuery = graphql`
         responsiveDesignSection {
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 790, quality: 100) {
+              fluid(maxHeight: 1180, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
