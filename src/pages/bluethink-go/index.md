@@ -3,7 +3,7 @@ templateKey: bluethink-go-page
 title: BlueThink™ GO
 heading: BlueThink™ GO
 subheading: 'Vær påkoblet anlegget ditt når som helst, fra hvor som helst!'
-featuredimage: /img/allInOne-gradient-bg.png.jpg
+featuredimage: /img/allInOne.psd.png
 furtherInformationData:
   cta:
     text: Se demo - SEALAB Ocean Space Center
