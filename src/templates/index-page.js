@@ -142,7 +142,11 @@ export const IndexPageTemplate = ({
             </div>
           </div>
           <figure className="image">
-            <img width="500px" src="/img/allInOne.png" alt="BlueThink™ GO" />
+            <img
+              width="1920px"
+              src="/img/allInOne-gradient-bg.png.jpg"
+              alt="BlueThink™ GO"
+            />
           </figure>
         </section>
       </div>
