@@ -1219,11 +1219,7 @@ section#domener {
     }
   }
 }
-section.hero.is-fullheight {
-  @media only screen and (max-width: $tablet) {
-    min-height: 0;
-  }
-}
+
 section#btgo-hero {
   padding: 0rem 1.5rem 4rem 1.5rem;
 }
