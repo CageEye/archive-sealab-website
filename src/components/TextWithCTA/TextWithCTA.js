@@ -5,13 +5,17 @@ import Button from '../Button';
 
 const TextWithCTA = ({ heading, description, buttonText, buttonPath }) => {
   return (
-    <>
+    <div className={styles.content}>
       <h2 className={styles.heading}>{heading}</h2>
       <p className={classNames(styles.description, 'big-paragraph')}>
         {description}
       </p>
-      <Button text={buttonText} link={buttonPath} className="is-primary" />
-    </>
+      {buttonText ? (
+        <Button text={buttonText} link={buttonPath} className="is-primary" />
+      ) : (
+        <></>
+      )}
+    </div>
   );
 };
 

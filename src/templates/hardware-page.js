@@ -1,11 +1,18 @@
 import React from 'react';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Slideshow from '../components/Sllideshow';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import Specifications from '../components/Specifications';
+import SectionList from '../components/SectionList';
+
 import Content, { HTMLContent } from '../components/Content';
+import NonStretchedImage from '../components/NonStretchedImage';
+
+function isEven(n) {
+  return n % 2 === 0;
+}
 
 export const HardwarePageTemplate = ({
   featuredimages,
@@ -13,7 +20,7 @@ export const HardwarePageTemplate = ({
   shortDescription,
   highlightSpecifications,
   allSpecifications,
-  // textAndImages,
+  textAndImages,
   contentComponent,
   content,
 }) => {
@@ -56,6 +63,7 @@ export const HardwarePageTemplate = ({
           <PostContent content={content} />
         </div>
       </section>
+      <SectionList items={textAndImages} />
     </>
   );
 };

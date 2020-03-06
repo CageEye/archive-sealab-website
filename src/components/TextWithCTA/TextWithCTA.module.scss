@@ -1,10 +1,14 @@
 @import '../_variables.scss';
 
-.heading {
-  padding-bottom: 50px;
-  font-weight: 300;
-}
 
-.description {
-  padding-bottom: 48px;
+.content {
+  .heading {
+    padding-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  .description {
+    padding-bottom: 48px;
+    color: $body-light !important;
+  }
 }
