@@ -66,11 +66,11 @@ partnership:
   heading: Samarbeid med de beste 
   description: SEALAB ligger i forkant av den digitale bølgen som skyller over havbruksnæringen om dagen. For å beholde denne posisjonen i mange år framover og kontinuerlig forbedre teknologien vi leverer til våre kunder, er fornuftige samarbeid helt avgjørende. Med ledende kunnskap innenfor hvert sitt felt ønsker vi stolt å trekke frem følgende samarbeidspartnere.
   companies:
-    - image: /img/sintef.svg
+    - image: /img/TELENOR-WHITE.png
       description: Gjennom EU-prosjektet 5G-HEART samarbeider SEALAB og Telenor Research om utvikling og implementasjon av banebrytende 5G-løsninger for havbruksnæringen. 
-    - image: /img/sintef.svg
+    - image: /img/AZURE-WHITE.png
       description: Video, bilder og sensordata lagres i skytjenesten Microsoft Azure. Med det ypperste utvalget prosseseringsplattformer for hånd, omsettes store mengder data og gir sluttbrukeren et nytt innsyn i sin operasjon. I samarbeid med Microsoft, har SEALAB tatt steget og flyttet samtlige kjernetjenester opp i skyen.
-    - image: /img/sintef.svg
+    - image: /img/SINTEF-WHITE.png
       description: SEALAB og SINTEF Ocean samarbeider tett gjennom prosjektet INDISAL, hvor gjenkjenning og “oppfølging” av laks på individnivå er en av målene. SINTEF er en av Europas største uavhengige forskningsorganisasjoner og har verdensledende ekspertise innen havbruksteknologi.
 
 quote:
