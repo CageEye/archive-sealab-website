@@ -300,6 +300,13 @@ collections:
                 fields:
                   - {label: "Fremhevet bilde", name: "image", widget: image, hint: "Bør vær være en logo med transparent bakgrunn"}
                   - {label: "Beskrivelse", name: description, widget: text}
+             
+          - label: "Sitat"
+            name: quote
+            widget: object
+            fields:
+              - {label: Sitatet, name: description, widget: text}
+              - {label: "Kilde", name: author, widget: string}
 
       - file: "src/pages/bluethink-go/index.md"
         label: "BlueThink GO"
