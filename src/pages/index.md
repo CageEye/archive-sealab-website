@@ -45,7 +45,7 @@ newsSection:
   subheading: BlueThink™ GO
   heading: Velkommen til neste generasjons kontrollrom!
   description: SEALAB er stolte av å kunne tilby oppdrettsnæringen BlueThink GO. En tjeneste som lar deg være påkoblet anlegget ditt når som helst, fra hvor som helst. Den gir deg sanntids værdata, AIS-data, sensordata fra merdene og verdier som sier noe røkternes sikkerhet ute på anlegget. For ikke å nevne den etterlengtede livestreamen, selvfølgelig med skyhøy bildekvalitet. 
-  featuredimage: /img/allInOne-gradient-bg.png.jpg
+  featuredimage: /img/tablet-holding-portrait.jpg
 
 largeImageSection:
   featuredimage: /img/sealab-controller-livestream-AIS.jpg
