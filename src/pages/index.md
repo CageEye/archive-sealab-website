@@ -64,7 +64,7 @@ centeredSection:
 partnership:
   subheading: Våre partnere
   heading: Samarbeid med de beste 
-  description: SEALAB ligger i forkant av den digitale bølgen som skyller over havbruksnæringen om dagen. For å beholde denne posisjonen i mange år framover og kontinuerlig forbedre teknologien vi leverer til våre kunder, er fornuftige samarbeid helt avgjørende. Med ledende kunnskap innenfor hvert sitt felt ønsker vi stolt å trekke frem følgende samarbeidspartnere.
+  description: SEALAB ligger i forkant av den digitale bølgen som skyller over havbruksnæringen om dagen. For å beholde denne posisjonen i mange år framover og kontinuerlig forbedre teknologien vi leverer til våre kunder, er fornuftige samarbeid helt avgjørende. 
   companies:
     - image: /img/TELENOR-WHITE.png
       description: Gjennom EU-prosjektet 5G-HEART samarbeider SEALAB og Telenor Research om utvikling og implementasjon av banebrytende 5G-løsninger for havbruksnæringen. 
