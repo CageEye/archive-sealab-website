@@ -5,14 +5,13 @@ import Footer from './Footer';
 import './all.scss';
 import useSiteMetadata from './SiteMetadata';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, seoTitle, seoDescription }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
       <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <html lang="no" />
+        <title>{seoTitle || title}</title>
 
         <link
           rel="apple-touch-icon"
@@ -40,22 +39,18 @@ const TemplateWrapper = ({ children }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta name="description" content={seoDescription || description} />
+        <meta property="og:url" content="https://sealab.no" />
+        <meta property="og:title" content={seoTitle || title} />
+        <meta
+          property="og:description"
+          content={seoDescription || description}
+        />
         <meta
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
       </Helmet>
-      {/* <noscript>
-        <iframe
-          title="google tag manager"
-          src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`}
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        />
-      </noscript> */}
       <div>{children}</div>
       <Footer />
     </div>

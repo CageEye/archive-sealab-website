@@ -1016,10 +1016,10 @@ section.video {
   // }
 
 @media (min-aspect-ratio: 16/9) {
-    .video-foreground { height: 300%; top: -100%; }
+    .video-foreground { height: 300%; top: -200px; }
 }
 @media (max-aspect-ratio: 16/9) {
-    .video-foreground { width: 300%; left: -100%; }
+    .video-foreground { width: 300%; left: -100px; }
 }
   @media screen and (min-width: $desktop) {
     .content.has-white-background {
@@ -1191,7 +1191,11 @@ section#domener {
     }
   }
 }
-
+section.hero.is-fullheight {
+  @media only screen and (max-width: $tablet) {
+    min-height: 0;
+  }
+}
 section#btgo-hero {
   padding: 0rem 1.5rem 4rem 1.5rem;
 

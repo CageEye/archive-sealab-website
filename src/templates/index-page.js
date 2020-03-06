@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import LayoutNoNav from '../components/LayoutNoNav';
-import SEO from '../components/SEO';
 import Hero from '../components/HeroVideo';
 import Navbar from '../components/Navbar';
 import Title from '../components/Title';
@@ -11,21 +10,28 @@ import Button from '../components/Button';
 import RecentArticles from '../components/RecentArticles';
 import fishVideoMP4 from '../videos/fishVideo.mp4';
 import fishVideoWebM from '../videos/fishVideo.webm';
-import ControlRoomImage from '../img/sealab-controller-livestream-AIS.jpg';
 import DNLogo from '../img/Logos/Mentioned/Default/DN-Logo.png';
 import OpdalingenLogofrom from '../img/Logos/Mentioned/Default/opdalingen-logo.png';
 import TULogo from '../img/Logos/Mentioned/Default/tu.no-logo.png';
 import ILaksLogo from '../img/Logos/Mentioned/Default/ilaksno-logo.png';
 import KystNoLogo from '../img/Logos/Mentioned/Default/kystno-logo.png';
+import BorderedContentSection from '../components/BorderedContentSection';
+import BorderedBoxes from '../components/BorderedBoxes';
+import QuoteSection from '../components/QuoteSection';
+
+import NonStretchedImage from '../components/NonStretchedImage';
 
 export const IndexPageTemplate = ({
-  title,
   heading,
   subheading,
   threeColumns,
+  news,
+  largeImageSection,
+  centeredSection,
+  partnership,
+  quote,
 }) => (
   <section className="has-dark-background">
-    <SEO title={title} />
     <Hero
       title={heading}
       subtitle={subheading}
@@ -37,9 +43,16 @@ export const IndexPageTemplate = ({
       backgroundVideoMP4={fishVideoMP4}
       backgroundVideoWebM={fishVideoWebM}
     />
+    <BorderedContentSection
+      sectionHeading={news.sectionHeading}
+      heading={news.heading}
+      subheading={news.subheading}
+      description={news.description}
+      fluidImage={news.featuredimage.childImageSharp.fluid}
+    />
     <section id="product" className="section has-dark-background">
       <div className="container">
-        <section id="machineVision" className="section is-medium">
+        <section id="machineVision" className="section">
           <div className="columns">
             <div className="column is-6 is-offset-3 has-text-centered">
               <Title
@@ -72,29 +85,26 @@ export const IndexPageTemplate = ({
           </div>
         </section>
         <section id="livestream" className="section is-medium">
-          <figure className="image">
-            <img src={ControlRoomImage} alt="Sealabs livestream control room" />
-          </figure>
+          <NonStretchedImage
+            fluid={largeImageSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={largeImageSection.subheading}
+            className="image"
+          />
           <div className="columns">
             <div className="column is-4">
               <Title
-                title="BlueThink™ gir høykvalitets Livestream av ditt anlegg"
-                subtitle="2D og 3D kamera"
+                title={largeImageSection.heading}
+                subtitle={largeImageSection.subheading}
                 position="left"
               />
             </div>
             <div className="column is-7 is-offset-1">
-              <p>
-                SEALAB utvikler unike kamerasystemer med sylskarpe bilder for
-                overvåking og analyse i havbruksnæringen. Livestreamen gir deg
-                kontroll både på laksen i merdene og anlegget generelt.
-                Systemene integrerer kamera, lys, sensorikk, mekanikk og
-                programvare som alle kommuniserer sammen (IoT).
-              </p>
+              <p>{largeImageSection.description}</p>
               <Button
                 className="is-secondary"
                 text="Les mer"
-                link="/bluethink"
+                link={largeImageSection.callToActionPath}
               />
             </div>
           </div>
@@ -115,9 +125,9 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-6 is-offset-3 has-text-centered">
               <Title
-                title="BlueThink™ GO - Tilgjengelig på alle enheter"
-                subtitle="Mobilt kontrollrom"
-                description="Med BlueThink™ GO får du fjerntilgang til kameraovervåkning, sensordata, værdata, sjøforhold og mye mer, direkte fra ditt anlegg."
+                title={centeredSection.heading}
+                subtitle={centeredSection.subheading}
+                description={centeredSection.description}
                 position="center"
               />
               <div className="columns">
@@ -135,22 +145,28 @@ export const IndexPageTemplate = ({
                   <Button
                     className="is-primary"
                     text="Les mer"
-                    link="/bluethink-go"
+                    link={centeredSection.callToActionPath}
                   />
                 </div>
               </div>
             </div>
           </div>
-          <figure className="image">
-            <img
-              width="1920px"
-              src="/img/allInOne-gradient-bg.png.jpg"
-              alt="BlueThink™ GO"
-            />
-          </figure>
+          <NonStretchedImage
+            fluid={centeredSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={centeredSection.subheading}
+            className="image"
+          />
         </section>
+        <BorderedBoxes
+          heading={partnership.heading}
+          subheading={partnership.subheading}
+          description={partnership.description}
+          boxes={partnership.companies}
+        />
       </div>
     </section>
+    <QuoteSection quote={quote.description} author={quote.author} />
   </section>
 );
 
@@ -167,7 +183,6 @@ const MentionedInLogo = ({ img }) => (
 );
 
 IndexPageTemplate.propTypes = {
-  title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
 };
@@ -176,12 +191,19 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <LayoutNoNav>
+    <LayoutNoNav
+      seoDescription={frontmatter.seoDescription}
+      seoTitle={frontmatter.title}
+    >
       <IndexPageTemplate
-        title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         threeColumns={frontmatter.threeColumns}
+        news={frontmatter.newsSection}
+        largeImageSection={frontmatter.largeImageSection}
+        centeredSection={frontmatter.centeredSection}
+        partnership={frontmatter.partnership}
+        quote={frontmatter.quote}
       />
 
       <RecentArticles />
@@ -206,6 +228,7 @@ export const pageQuery = graphql`
         title
         heading
         subheading
+        seoDescription
         threeColumns {
           heading
           subheading
@@ -218,6 +241,70 @@ export const pageQuery = graphql`
               publicURL
             }
           }
+        }
+        newsSection {
+          sectionHeading
+          subheading
+          heading
+          description
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
+        largeImageSection {
+          subheading
+          heading
+          description
+          callToActionPath
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
+        centeredSection {
+          subheading
+          heading
+          description
+          callToActionPath
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
+        partnership {
+          subheading
+          heading
+          description
+          companies {
+            description
+            image {
+              childImageSharp {
+                fluid(maxHeight: 400) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  presentationWidth
+                }
+              }
+              publicURL
+              extension
+            }
+          }
+        }
+        quote {
+          description
+          author
         }
       }
     }
