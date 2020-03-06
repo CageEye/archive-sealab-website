@@ -1000,11 +1000,18 @@ section.video {
       margin: auto;
       position: relative;
       display: block;
+      text-align: center;
     }
     .video-iframe {
       width: 85vw;
       height: 48vw;
       margin-left: 5vw;
+      @media screen and (min-width: $desktop) { 
+        width: 57vw;
+        height: 32vw;
+        margin: 5vw;
+      }
+
     }
   // }
 
