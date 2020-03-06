@@ -292,7 +292,7 @@ export const pageQuery = graphql`
             description
             image {
               childImageSharp {
-                fluid(maxHeight: 400) {
+                fluid(maxWidth: 210) {
                   ...GatsbyImageSharpFluid_tracedSVG
                   presentationWidth
                 }

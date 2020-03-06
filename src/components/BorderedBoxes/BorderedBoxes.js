@@ -54,8 +54,8 @@ const Box = ({ image, description }) => {
         <NonStretchedImage
           fluid={image.childImageSharp.fluid}
           objectFit="contain"
+          className={styles.box__image__gatsby}
           alt="Logo"
-          className={styles.box__image}
         />
       );
     if (image.publicURL)
@@ -71,7 +71,9 @@ const Box = ({ image, description }) => {
   };
   return (
     <div className={classNames('box', styles.box)}>
-      <Image />
+      <div className={styles.box__image__wrapper}>
+        <Image />
+      </div>
       <p className={styles.box__description}>{description}</p>
     </div>
   );
