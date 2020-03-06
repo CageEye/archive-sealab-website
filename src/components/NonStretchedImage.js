@@ -16,7 +16,7 @@ const NonStretchedImage = props => {
     };
   }
   if (!props.fluid && props.publicURL)
-    return <img src={props.publicURL} alt={props.alt} />;
+    return <img src={props.publicURL} alt={props.alt} className={props.className} />;
 
   return <Img {...normalizedProps} />;
 };

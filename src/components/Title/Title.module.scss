@@ -18,7 +18,7 @@ $spacing-between: 18px;
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.55px;
-  color: $text-grey-light;
+  color: $text-grey-light !important;
   padding-bottom: $spacing-between;
   max-width: 650px;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './BorderedBoxes.module.scss';
 import NonStretchedImage from '../NonStretchedImage';
+import Title from '../Title';
 import { idMaker } from '../../utils/id-maker';
 
 const gen = idMaker();
@@ -25,10 +26,13 @@ const BorderedBoxes = ({
   return (
     <section className={classNames('section', className)}>
       <div className="container">
-        <p>{subheading}</p>
-        <h2>{heading}</h2>
-        <p>{description}</p>
-        <div className="wrapper">
+        <Title
+          title={heading}
+          subtitle={subheading}
+          description={description}
+          position="center"
+        />
+        <div className={classNames('wrapper', styles.boxes)}>
           {boxes.map(boxContent => (
             <Box
               image={boxContent.image}
@@ -68,7 +72,7 @@ const Box = ({ image, description }) => {
   return (
     <div className={classNames('box', styles.box)}>
       <Image />
-      <p>{description}</p>
+      <p className={styles.box__description}>{description}</p>
     </div>
   );
 };
