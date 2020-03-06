@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 
 const NonStretchedImage = props => {
   let normalizedProps = props;
-  // eslint-disable-next-line
+  /* eslint-disable */
     if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
       ...props,
@@ -15,6 +15,8 @@ const NonStretchedImage = props => {
       },
     };
   }
+  if (!props.fluid && props.publicURL)
+    return <img src={props.publicURL} alt={props.alt} className={props.className} />;
 
   return <Img {...normalizedProps} />;
 };

@@ -241,8 +241,18 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Tittel, name: title, widget: string}
+          - {label: SEO Beskrivelse, name: seoDescription, widget: text}
           - {label: Overskrift, name: heading, widget: string}
           - {label: Underoverskrift, name: subheading, widget: string}
+          - label: "Nyheter"
+            name: newsSection
+            widget: object
+            fields:
+              - {label: Overskrift liten skrift, name: sectionHeading, widget: string, required: false}
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
           - label: "Fokusområder"
             name: threeColumns
             widget: object
@@ -258,6 +268,39 @@ collections:
                   - {label: "H3 Overskrift", name: heading, widget: string}
                   - {label: "Beskrivelse", name: description, widget: text}
                   - {label: "Knapp - link", name: buttonPath, widget: string}
+          - label: "Kontrollrom"
+            name: largeImageSection
+            widget: object
+            fields:
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "CTA path", name: callToActionPath, widget: string, hint: "Eks: /bluethink-go"}
+          - label: "Midtstilt innhold"
+            name: centeredSection
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "CTA path", name: callToActionPath, widget: string, hint: "Eks: /bluethink-go"}
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
+             
+          - label: "Partnerskap"
+            name: partnership
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Partnerskap bokser"
+                widget: list
+                name: companies
+                fields:
+                  - {label: "Fremhevet bilde", name: "image", widget: image, hint: "Bør vær være en logo med transparent bakgrunn"}
+                  - {label: "Beskrivelse", name: description, widget: text}
+
       - file: "src/pages/bluethink-go/index.md"
         label: "BlueThink GO"
         name: "bluethink-go"
