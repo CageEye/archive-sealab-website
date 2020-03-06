@@ -1,62 +1,39 @@
 @import '../_variables.scss';
 
-.slider {
-  position: relative;
-  width: 100%;
-  height: 90vh;
-  max-height: 100%;
-  overflow: hidden;
-
-  .image {
-    width: 100%;
-    max-height: 100%;
+.section {
+  background-color: $dark-light;
+  text-align: left;
+  .wrapper {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
   }
-
-  .previous,
-  .next {
-    transition: $transition;
-    top: 60vh !important;
-    #background {
-      fill-opacity: 0.2;
-    }
-    #arrow {
-      stroke: white;
-    }
-    &:not(.disabled):hover,
-    &:not(.disabled):focus {
-      .arrowIcon {
-        #background {
-          fill-opacity: 1;
-        }
-        #arrow {
-          stroke: #464951;
-        }
-      }
-    }
+  .quote {
+    color: $body-light;
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 20px;
   }
-  @media only screen and (min-width: $desktop) {
-    height: 50vh;
-    .image {
-      margin-top: 8vh !important;
-    }
-    .previous,
-    .next {
-      top: 35vh !important;
-    }
+  .author {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
   }
-}
-
-
-.dotNavigation {
-  margin: auto;
-  text-align: center;
-  margin-top: 60px;
-  svg.dot {
-    margin: 0 10px;
-    height: 10px;
-    width: 10px;
+  .quote,
+  .author {
+    line-height: 170%;
+    letter-spacing: 0.4px;
   }
-  @media only screen and (max-width: $desktop) {
-    margin-top: -32vh;
+  .quote__icon {
+    float: left;
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+  @media only screen and (min-width: $tablet) {
+    text-align: center;
+    .quote__icon {
+      left: -20px;
+    }
   }
 }
