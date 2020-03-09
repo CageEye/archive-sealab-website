@@ -12,7 +12,7 @@ subheading: >-
   fiskevelferd, fôringsprosess og biomasse.
 newsSection:
   description: >-
-    SEALAB er stolte av å kunne tilby oppdrettsnæringen BlueThink GO. En
+    SEALAB er stolte av å kunne tilby oppdrettsnæringen BlueThink™ GO. En
     tjeneste som lar deg være påkoblet anlegget ditt når som helst, fra hvor som
     helst. Den gir deg sanntids værdata, AIS-data, sensordata fra merdene og
     verdier som sier noe om røkternes sikkerhet ute på anlegget. For ikke å
