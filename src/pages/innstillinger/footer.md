@@ -6,8 +6,6 @@ mainNavigation:
     title: BlueThink™ Kontrollrom
   - path: /bluethink-go
     title: BlueThink™ GO
-  - path: /blogg
-    title: Blogg
   - path: /losninger/gapefrekvens
     title: Stressnivå
   - path: /losninger/foroptimalisering
@@ -16,15 +14,17 @@ mainNavigation:
     title: Helseovervåkning
   - path: /digital-tvilling
     title: Digital tvilling
+  - path: /blogg
+    title: Blogg
 softwareNavigation:
   - path: /apper/ais
     title: AIS
-  - path: /apper/g-force
-    title: G-force
   - path: /apper/weather
     title: Weather
   - path: /apper/aqualog
     title: Aqualog
+  - path: /apper/g-force
+    title: G-force
 hardwareNavigation:
   - path: /sealab-connect
     title: SEALAB Connect
