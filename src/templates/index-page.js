@@ -50,9 +50,9 @@ export const IndexPageTemplate = ({
       description={news.description}
       fluidImage={news.featuredimage.childImageSharp.fluid}
     />
-    <section id="product" className="section has-dark-background">
+    <section id="product" className="has-dark-background">
       <div className="container">
-        <section id="machineVision" className="section">
+        <section id="machineVision" className="section is-medium">
           <div className="columns">
             <div className="column is-6 is-offset-3 has-text-centered">
               <Title
@@ -75,7 +75,7 @@ export const IndexPageTemplate = ({
                   <h4>{iconColumn.heading}</h4>
                   <p>{iconColumn.description}</p>
                   <Button
-                    className="is-transparent"
+                    className="is-transparent small"
                     text="Les mer"
                     link={iconColumn.buttonPath}
                   />
@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
             })}
           </div>
         </section>
-        <section id="livestream" className="section is-medium">
+        <section id="livestream" className="section is-small">
           <NonStretchedImage
             fluid={largeImageSection.featuredimage.childImageSharp.fluid}
             objectFit="contain"
@@ -109,7 +109,7 @@ export const IndexPageTemplate = ({
             </div>
           </div>
         </section>
-        <section id="published" className="section">
+        <section id="published" className="section is-medium">
           <h3 className="has-text-centered">
             Hvem har publisert vår historie?
           </h3>
@@ -121,7 +121,7 @@ export const IndexPageTemplate = ({
             <MentionedInLogo img={KystNoLogo} />
           </div>
         </section>
-        <section id="tablet" className="section is-medium">
+        <section id="tablet" className="section is-small">
           <div className="columns">
             <div className="column is-6 is-offset-3 has-text-centered">
               <Title
@@ -135,7 +135,7 @@ export const IndexPageTemplate = ({
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="button is-transparent"
+                    className="button is-transparent medium"
                     href="http://sealab.live/"
                   >
                     Se demo
@@ -143,7 +143,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column">
                   <Button
-                    className="is-primary"
+                    className="is-primary medium"
                     text="Les mer"
                     link={centeredSection.callToActionPath}
                   />

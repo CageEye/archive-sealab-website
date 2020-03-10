@@ -75,14 +75,14 @@ export const LivestreamPageTemplate = ({
         </div>
       </section>
       <section className="video section has-dark-background">
-        <div className="video-background">
-          <YouTube
-            videoId="psagF7LbQ5s"
-            opts={videoOptions}
-            className="video-iframe"
-          />
-        </div>
         <div className="container">
+          <div className="video-background">
+            <YouTube
+              videoId="psagF7LbQ5s"
+              opts={videoOptions}
+              className="video-iframe"
+            />
+          </div>
           <div className="content has-white-background">
             <p>{videoDescription}</p>
           </div>

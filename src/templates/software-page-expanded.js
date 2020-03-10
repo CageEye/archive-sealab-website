@@ -37,7 +37,7 @@ export const SoftwarePageTemplate = ({
       >
         <NonStretchedImage fluid={image} objectFit="contain" />
       </Hero>
-      <section id="software-content" className="section has-dark-background">
+      <section id="software-content" className="section is-medium has-dark-background">
         <div className="container">
           <div className="columns">
             <div className="column title">
@@ -70,16 +70,14 @@ export const SoftwarePageTemplate = ({
         className="section is-large"
         style={{ backgroundImage: `url(${trondheimOffice})` }}
       >
-        <div className="columns">
-          <div className="column is-6 has-text-centered">
+          <div className="has-text-centered">
             <h3>Høy service med 24/7 support</h3>
             <p>
               Trenger du hjelp med noen av våre produkter? Eller bare litt info?
               Vi er her 24 timer i døgnet, 7 dager i uken for deg.
             </p>
-            <Button text="Kontakt oss" className="is-primary" link="/kontakt" />
+            <Button text="Kontakt oss" className="is-primary large" link="/kontakt" />
           </div>
-        </div>
       </section>
     </>
   );
