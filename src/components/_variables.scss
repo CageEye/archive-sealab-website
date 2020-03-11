@@ -14,7 +14,7 @@ $background-color-dark: $midnight-dark;
 $background-color-light-dark: $midnight-dark-light;
 $body-dark: #3E4045;
 $secondary-background: #191C27;
-$border-light-background: #333333;
+$border-light-background: rgba(0,0,0,.15);
 $border-dark-background: rgba(255, 255, 255, 0.15);;
 $error: #ED1313;
 $success: #32B576;
@@ -42,7 +42,7 @@ $background: $body-dark;
 
 
 /******  EFFECTS  *******/
-$transition: all 0.5s ease;
+$transition: all 0.25s ease;
 
 
 /******  SIZES  *******/
@@ -115,8 +115,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 170%;
-letter-spacing: 0.65px;
-
 color: $text-grey-light;
 }
 
@@ -126,8 +124,6 @@ color: $text-grey-light;
   font-weight: normal;
   font-size: 18px;
   line-height: 170%;
-  letter-spacing: 0.65px;
-  
   color: $body-dark;
   }
 
@@ -160,11 +156,10 @@ color: $text-grey-light;
   font-family: $primaryFont;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem !important;
   line-height: 100%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: 1px;
   transition: $transition;
 }
 

@@ -15,7 +15,8 @@ const BorderedContentSection = ({
 
   return (
     <section
-      className={classNames('section', 'is-medium', className, styles.section)}
+      id={'BorderedContent'}
+      className={classNames('section', 'is-small', className, styles.section)}
     >
       <div className="container">
         {sectionHeading ? (

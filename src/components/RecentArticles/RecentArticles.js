@@ -47,6 +47,7 @@ const RecentArticlesTemplate = ({ articles }) => {
               className={classNames(
                 'is-transparent',
                 'has-white-background',
+                'medium',
                 styles.button,
               )}
               text="Se alle artikler"

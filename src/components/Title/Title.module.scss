@@ -6,12 +6,13 @@ $spacing-between: 18px;
   color: $white;
   // line-height: 110%;
   @include Title;
-  padding-bottom: $spacing-between;
+  padding-bottom: 32px;
   word-wrap: break-word;
 }
 .subtitle {
   @include Subtitle;
-  padding-bottom: $spacing-between;
+  padding-bottom: 8px;
+  line-height: 1.6rem;
 }
 .description {
   font-family: $primaryFont;
