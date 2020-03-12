@@ -1,12 +1,13 @@
 @import '../_variables.scss';
-
 .heading {
   color: white;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: bold;
+  margin-top: 70px;
   @media only screen and (max-width: $tablet) {
     text-align: center;
+    margin-top: 0px;
   }
 }
 
@@ -17,12 +18,18 @@
     background: transparent;
     z-index: 20;
     margin: auto 0;
+    @media only screen and (max-width: $tablet) {
+      padding:16px 0;
+    }
   }
   .wrapper__content {
     grid-column: col 2 / span 4;
     grid-row: 1;
     background: transparent;
     z-index: 10;
+    @media only screen and (max-width: $tablet) {
+      padding:24px 0 0;
+    }
   }
   .wrapper__content__subheading {
     font-size: 14px;
@@ -33,6 +40,7 @@
     font-size: 16px;
     color: $body-light;
     max-width: 500px;
+    padding-top: 24px;
   }
   @media only screen and (min-width: $tablet) {
     display: grid;

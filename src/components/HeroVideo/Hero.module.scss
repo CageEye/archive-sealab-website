@@ -73,16 +73,22 @@ $overlay: rgba(1, 10, 46, 0.726);
         font-style: normal;
         line-height: 110%;
         font-weight: 300;
-
+        font-size: 4.5rem;
     }
     @media only screen and (max-width: $tablet) {
         max-width: 100%;
         padding: 1rem;
+        height:calc(100vh - 56px);
+        h1{
+            font-size: 2.875rem;
+        }
         
     }
     p {
         @include text_Light;
         padding-top: 18px;
+        padding-bottom: 32px;
+        max-width: 700px;
     }
 }
 

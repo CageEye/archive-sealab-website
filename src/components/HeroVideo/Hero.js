@@ -62,12 +62,12 @@ const Hero = ({
           <div className={styles.groupedButtons}>
             <Button
               link={callToActionLink}
-              className="is-primary"
+              className="is-primary large"
               text={callToActionText}
             />
             <Button
               link={secondaryCallToActionLink}
-              className="is-link"
+              className="is-link large"
               text={secondaryCallToActionText}
             />
           </div>

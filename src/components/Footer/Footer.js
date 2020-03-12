@@ -68,7 +68,7 @@ const Footer = ({
             </div>
             <Button
               text={callToAction.buttonText}
-              className="is-primary"
+              className="is-primary large"
               link={callToAction.buttonPath}
             />
           </section>
