@@ -148,7 +148,6 @@ collections:
       - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
   
-
   - name: "simple-pages"
     label: "Rene tekst sider"
     folder: "src/pages/"
@@ -229,7 +228,6 @@ collections:
               - {label: "Kort beskrivelse", name: "description", widget: "string"}
               - {label: "Knappetekst", name: "buttonText", widget: "string"}
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
-
 
 
   - name: "pages"
@@ -431,4 +429,48 @@ collections:
                   - {label: "Bilde", name: "img", widget: image}
                   - {label: "Overskrift", name: heading, widget: string}
                   - {label: "Beskrivelse", name: description, widget: text}
-          
+        
+      - file: "src/pages/ressurser.md"
+        label: "Ressurser"
+        name: "ressurser"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "resource-page"}
+          - {label: "Tittel", name: "title", widget: "string"}
+          - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+          - {label: "Underoverskrift", name: "body", widget: "markdown", hint: "Skriv så mye du vil. NB! Teksten vil bli sentrert"}
+          - label: "Produktark"
+            name: product_sheets
+            widget: list
+            fields:
+              - {label: "H3 Overskrift", name: heading, widget: string}
+              - {label: "Underoverskrift", name: subheading, widget: string, default: "Spesifikasjoner"}
+              - {label: "PDF - Fil", name: file, widget: file, hint: "Prøv å last opp filer som PDF."}
+              - {label: "Ikon", name: "icon", widget: image}
+              - {label: "Type", name: "type", widget: string, default: "PDF"}
+          - label: "Brukermanualer"
+            name: user_manuals
+            widget: list
+            fields:
+              - {label: "H3 Overskrift", name: heading, widget: string}
+              - {label: "Underoverskrift", name: subheading, widget: string, default: "Spesifikasjoner"}
+              - {label: "PDF - Fil", name: file, widget: file, hint: "Prøv å last opp filer som PDF."}
+              - {label: "Ikon", name: "icon", widget: image}
+              - {label: "Type", name: "type", widget: string, default: "PDF"}
+
+          - label: "Release notes"
+            name: release_notes
+            widget: list
+            fields:
+              - {label: "H3 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: string}
+              - {label: "PDF - Fil", name: file, widget: file, hint: "Prøv å last opp filer som PDF."}
+              - {label: "Ikon", name: "icon", widget: image}
+              - {label: "Type", name: "type", widget: string, default: "PDF"}
+              - label: "Dato"
+                name: "date"
+                widget: "datetime"
+                default: ""
+                dateFormat: "DD.MM.YYYY" # e.g. 24.12.2021
+                timeFormat: "HH:mm" # e.g. 21:07
+                format: "LLL"
+        
