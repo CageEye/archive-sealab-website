@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: SEALAB-Software/website
-  branch: stable
+  branch: feature/resources
 
 media_folder: static/img
 public_folder: /img
