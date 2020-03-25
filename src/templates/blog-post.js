@@ -158,7 +158,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// --data '{"client_id":"zGR4YhHu5o02HkcMOAHeDZIr5pZ4NGmm",
-// "client_secret":"GgzLva-fEOOnt29Gr0VnvJ6wmh7YqtMMrmXutseKHywNoBVFrFjxmDMFP-ouVqfe",
-// "audience":"https://bluethink-go-api-server.sealab.no","grant_type":"client_credentials"}'
